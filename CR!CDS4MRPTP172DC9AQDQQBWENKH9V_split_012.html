@@ -1,0 +1,477 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Java&amp;#8482;: A Beginner&amp;#8217;s Guide Sixth Edition</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="page_styles.css" rel="stylesheet" type="text/css"/>
+</head>
+  <body class="calibre">
+<div id="filepos452160" class="calibre29"><span><img alt="image" src="images/00003.jpg" class="calibre30"/></span></div><div class="calibre11"> </div>
+<div class="calibre31"><span class="calibre2"><span><big class="calibre3"><big class="calibre4"><big class="calibre5"><big class="calibre6"><big class="calibre32"><big class="calibre4">Chapter 5</big></big></big></big></big></big></span></span></div>
+<div class="calibre9"><span class="calibre2"><span>More Data Types and Operators</span></span></div><div class="calibre33"> </div>
+<div class="calibre1"><span class="calibre10"><span><span class="bold1">Key Skills &amp; Concepts</span></span></span></div>
+<div class="calibre26"><span><img alt="image" src="images/00002.jpg" class="calibre25"/>   Understand and create arrays</span></div>
+<div class="calibre26"><span><img alt="image" src="images/00002.jpg" class="calibre25"/>   Create multidimensional arrays</span></div>
+<div class="calibre26"><span><img alt="image" src="images/00002.jpg" class="calibre25"/>   Create irregular arrays</span></div>
+<div class="calibre26"><span><img alt="image" src="images/00002.jpg" class="calibre25"/>   Know the alternative array declaration syntax</span></div>
+<div class="calibre26"><span><img alt="image" src="images/00002.jpg" class="calibre25"/>   Assign array references</span></div>
+<div class="calibre26"><span><img alt="image" src="images/00002.jpg" class="calibre25"/>   Use the <span class="bold1">length</span> array member</span></div>
+<div class="calibre26"><span><img alt="image" src="images/00002.jpg" class="calibre25"/>   Use the for-each style <span class="bold1">for</span> loop</span></div>
+<div class="calibre26"><span><img alt="image" src="images/00002.jpg" class="calibre25"/>   Work with strings</span></div>
+<div class="calibre26"><span><img alt="image" src="images/00002.jpg" class="calibre25"/>   Apply command-line arguments</span></div>
+<div class="calibre26"><span><img alt="image" src="images/00002.jpg" class="calibre25"/>   Use the bitwise operators</span></div>
+<div class="calibre26"><span><img alt="image" src="images/00002.jpg" class="calibre25"/>   Apply the <span class="bold1">?</span> operator</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00004.jpg" class="calibre34"/></span></div><div class="calibre18"> </div>
+<div class="calibre12"><span><span><span class="calibre2">T</span></span>his chapter returns to the subject of Java’s data types and operators. It discusses arrays, the <span class="bold1">String</span> type, the bitwise operators, and the <span class="bold1">?</span> ternary operator. It also covers Java’s for-each style <span class="bold1">for</span> loop. Along the way, command-line arguments are described.</span></div>
+<div id="filepos455385" class="calibre1"><span class="calibre10"><span><span class="bold1">Arrays</span></span></span></div>
+<div class="calibre12"><span>An <span class="italic">array</span> is a collection of variables of the same type, referred to by a common name. In Java, arrays can have one or more dimensions, although the one-dimensional array is the most common. Arrays are used for a variety of purposes because they offer a convenient means of grouping together related variables. For example, you might use an array to hold a record of the daily high temperature for a month, a list of stock price averages, or a list of your collection of programming books.</span></div>
+<div class="calibre23"><span>The principal advantage of an array is that it organizes data in such a way that it can be easily manipulated. For example, if you have an array containing the incomes for a selected group of households, it is easy to compute the average income by cycling through the array. Also, arrays organize data in such a way that it can be easily sorted.</span></div>
+<div class="calibre23"><span>Although arrays in Java can be used just like arrays in other programming languages, they have one special attribute: they are implemented as objects. This fact is one reason that a discussion of arrays was deferred until objects had been introduced. By implementing arrays as objects, several important advantages are gained, not the least of which is that unused arrays can be garbage collected.</span></div>
+<div id="filepos456942" class="calibre1"><span class="calibre10"><span><span class="bold1">One-Dimensional Arrays</span></span></span></div>
+<div class="calibre12"><span>A one-dimensional array is a list of related variables. Such lists are common in programming. For example, you might use a one-dimensional array to store the account numbers of the active users on a network. Another array might be used to store the current batting averages for a baseball team.</span></div>
+<div class="calibre23"><span>To declare a one-dimensional array, you can use this general form:</span></div>
+<div class="calibre27"><span><span class="italic">type array-name</span>[ ] = new <span class="italic">type[size]</span>;</span></div>
+<div class="calibre27"><span>Here, <span class="italic">type</span> declares the element type of the array. (The element type is also commonly referred to as the base type.) The element type determines the data type of each element contained in the array. The number of elements that the array will hold is determined by <span class="italic">size</span>. Since arrays are implemented as objects, the creation of an array is a two-step process. First, you declare an array reference variable. Second, you allocate memory for the array, assigning a reference to that memory to the array variable. Thus, arrays in Java are dynamically allocated using the <span class="bold1">new</span> operator.</span></div>
+<div class="calibre23"><span>Here is an example. The following creates an <span class="bold1">int</span> array of 10 elements and links it to an array reference variable named <span class="bold1">sample</span>:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00281.jpg" class="calibre311"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>This declaration works just like an object declaration. The <span class="bold1">sample</span> variable holds a reference to the memory allocated by <span class="bold1">new</span>. This memory is large enough to hold 10 elements of type <span class="bold1">int</span>. As with objects, it is possible to break the preceding declaration in two. For example:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00282.jpg" class="calibre312"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>In this case, when <span class="bold1">sample</span> is first created, it refers to no physical object. It is only after the second statement executes that <span class="bold1">sample</span> is linked with an array.</span></div>
+<div class="calibre23"><span>An individual element within an array is accessed by use of an index. An <span class="italic">index</span> describes the position of an element within an array. In Java, all arrays have zero as the index of their first element. Because <span class="bold1">sample</span> has 10 elements, it has index values of 0 through 9. To index an array, specify the number of the element you want, surrounded by square brackets. Thus, the first element in <span class="bold1">sample</span> is <span class="bold1">sample[0]</span>, and the last element is <span class="bold1">sample[9]</span>. For example, the following program loads <span class="bold1">sample</span> with the numbers 0 through 9:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00283.jpg" class="calibre313"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>The output from the program is shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00284.jpg" class="calibre314"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>Conceptually, the <span class="bold1">sample</span> array looks like this:</span></div>
+<div class="calibre29"><span><img alt="image" src="images/00285.jpg" class="calibre315"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>Arrays are common in programming because they let you deal easily with large numbers of related variables. For example, the following program finds the minimum and maximum values stored in the <span class="bold1">nums</span> array by cycling through the array using a <span class="bold1">for</span> loop:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00286.jpg" class="calibre316"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>The output from the program is shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00287.jpg" class="calibre317"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>In the preceding program, the <span class="bold1">nums</span> array was given values by hand, using 10 separate assignment statements. Although perfectly correct, there is an easier way to accomplish this. Arrays can be initialized when they are created. The general form for initializing a one-dimensional array is shown here:</span></div>
+<div class="calibre27"><span><span class="italic">type array-name</span>[ ] = { <span class="italic">val1, val2, val3</span>, …, <span class="italic">valN</span> };</span></div>
+<div class="calibre27"><span>Here, the initial values are specified by <span class="italic">val1</span> through <span class="italic">valN</span>. They are assigned in sequence, left to right, in index order. Java automatically allocates an array large enough to hold the initializers that you specify. There is no need to explicitly use the <span class="bold1">new</span> operator. For example, here is a better way to write the <span class="bold1">MinMax</span> program:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00288.jpg" class="calibre318"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>Array boundaries are strictly enforced in Java; it is a run-time error to overrun or underrun the end of an array. If you want to confirm this for yourself, try the following program that purposely overruns an array:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00289.jpg" class="calibre319"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>As soon as <span class="bold1">i</span> reaches 10, an <span class="bold1">ArrayIndexOutOfBoundsException</span> is generated and the program is terminated.</span></div>
+<div class="calibre18"> </div><table cellspacing="0" cellpadding="0" class="calibre37">
+<colgroup class="calibre38">
+<col class="calibre72"/>
+<col class="calibre73"/>
+</colgroup>
+<tr class="calibre41">
+<td valign="top" id="filepos463277" class="calibre74"><span class="calibre10"><span class="bold1">Try This 5-1</span> </span></td>
+<td valign="top" class="calibre75"><span class="calibre10">Sorting an Array</span></td>
+</tr></table><div class="calibre43"> </div>
+<div class="calibre1"><span><img alt="image" src="images/00290.jpg" class="calibre320"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>Because a one-dimensional array organizes data into an indexable linear list, it is the perfect data structure for sorting. In this project you will learn a simple way to sort an array. As you may know, there are a number of different sorting algorithms. There are the quick sort, the shaker sort, and the shell sort, to name just three. However, the best known, simplest, and easiest to understand is called the Bubble sort. Although the Bubble sort is not very efficient—in fact, its performance is unacceptable for sorting large arrays—it may be used effectively for sorting small arrays.</span></div>
+<div class="calibre19"><span>  <span class="bold1">1.</span>  Create a file called <span class="bold1">Bubble.java</span>.</span></div>
+<div class="calibre47"><span>  <span class="bold1">2.</span>  The Bubble sort gets its name from the way it performs the sorting operation. It uses the repeated comparison and, if necessary, exchange of adjacent elements in the array. In this process, small values move toward one end and large ones toward the other end. The process is conceptually similar to bubbles finding their own level in a tank of water. The Bubble sort operates by making several passes through the array, exchanging out-of-place elements when necessary. The number of passes required to ensure that the array is sorted is equal to one less than the number of elements in the array.</span></div>
+<div class="calibre47"><span>        Here is the code that forms the core of the Bubble sort. The array being sorted is called <span class="bold1">nums</span>.</span></div>
+<div class="calibre47"><span>        <img alt="image" src="images/00291.jpg" class="calibre321"/></span></div>
+<div class="calibre47"><span>        Notice that sort relies on two <span class="bold1">for</span> loops. The inner loop checks adjacent elements in the array, looking for out-of-order elements. When an out-of-order element pair is found, the two elements are exchanged. With each pass, the smallest of the remaining elements moves into its proper location. The outer loop causes this process to repeat until the entire array has been sorted.</span></div>
+<div class="calibre47"><span>  <span class="bold1">3.</span>  Here is the entire <span class="bold1">Bubble</span> program:</span></div>
+<div class="calibre47"><span>        <img alt="image" src="images/00292.jpg" class="calibre322"/></span></div>
+<div class="calibre47"><span>        The output from the program is shown here:</span></div>
+<div class="calibre47"><span>        <img alt="image" src="images/00293.jpg" class="calibre323"/></span></div>
+<div class="calibre47"><span>  <span class="bold1">4.</span>  Although the Bubble sort is good for small arrays, it is not efficient when used on larger ones. The best general-purpose sorting algorithm is the Quicksort. The Quicksort, however, relies on features of Java that you have not yet learned about.</span></div>
+<div class="calibre36"><span><img alt="image" src="images/00005.jpg" class="calibre34"/></span></div><div class="calibre18"> </div>
+<div id="filepos467520" class="calibre9"><span class="calibre10"><span><span class="bold1">Multidimensional Arrays</span></span></span></div>
+<div class="calibre12"><span>Although the one-dimensional array is the most commonly used array in programming, multidimensional arrays (arrays of two or more dimensions) are certainly not rare. In Java, a multidimensional array is an array of arrays.</span></div>
+<div id="filepos467931" class="calibre1"><span class="calibre10"><span><span class="bold1">Two-Dimensional Arrays</span></span></span></div>
+<div class="calibre12"><span>The simplest form of the multidimensional array is the two-dimensional array. A two-dimensional array is, in essence, a list of one-dimensional arrays. To declare a two-dimensional integer array <span class="bold1">table</span> of size 10, 20 you would write</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00294.jpg" class="calibre324"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>Pay careful attention to the declaration. Unlike some other computer languages, which use commas to separate the array dimensions, Java places each dimension in its own set of brackets. Similarly, to access point 3, 5 of array <span class="bold1">table</span>, you would use <span class="bold1">table[3][5]</span>.</span></div>
+<div class="calibre23"><span>In the next example, a two-dimensional array is loaded with the numbers 1 through 12.</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00295.jpg" class="calibre325"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>In this example, <span class="bold1">table[0][0]</span> will have the value 1, <span class="bold1">table[0][1]</span> the value 2, <span class="bold1">table[0][2]</span> the value 3, and so on. The value of <span class="bold1">table[2][3]</span> will be 12. Conceptually, the array will look like that shown in <a href="#filepos469471">Figure 5-1</a>.</span></div>
+<div class="calibre28">
+<div id="filepos469471" class="calibre29"><span><img alt="image" src="images/00296.jpg" class="calibre326"/></span></div><div class="calibre11"> </div>
+<div class="calibre1"><span><img alt="image" src="images/00057.jpg" class="calibre34"/></span></div>
+<div class="calibre9"><span><span class="bold1">Figure 5-1</span>   Conceptual view of the table array by the <span class="bold1">TwoD</span> program</span></div><div class="calibre18"> </div>
+</div>
+<div id="filepos469915" class="calibre9"><span class="calibre10"><span><span class="bold1">Irregular Arrays</span></span></span></div>
+<div class="calibre12"><span>When you allocate memory for a multidimensional array, you need to specify only the memory for the first (leftmost) dimension. You can allocate the remaining dimensions separately. For example, the following code allocates memory for the first dimension of <span class="bold1">table</span> when it is declared. It allocates the second dimension manually.</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00297.jpg" class="calibre327"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>Although there is no advantage to individually allocating the second dimension arrays in this situation, there may be in others. For example, when you allocate dimensions separately, you do not need to allocate the same number of elements for each index. Since multidimensional arrays are implemented as arrays of arrays, the length of each array is under your control. For example, assume you are writing a program that stores the number of passengers that ride an airport shuttle. If the shuttle runs 10 times a day during the week and twice a day on Saturday and Sunday, you could use the <span class="bold1">riders</span> array shown in the following program to store the information. Notice that the length of the second dimension for the first five indices is 10 and the length of the second dimension for the last two indices is 2.</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00298.jpg" class="calibre328"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>The use of irregular (or ragged) multidimensional arrays is not recommended for most applications, because it runs contrary to what people expect to find when a multidimensional array is encountered. However, irregular arrays can be used effectively in some situations. For example, if you need a very large two-dimensional array that is sparsely populated (that is, one in which not all of the elements will be used), an irregular array might be a perfect solution.</span></div>
+<div id="filepos472132" class="calibre1"><span class="calibre10"><span><span class="bold1">Arrays of Three or More Dimensions</span></span></span></div>
+<div class="calibre12"><span>Java allows arrays with more than two dimensions. Here is the general form of a multidimensional array declaration:</span></div>
+<div class="calibre27"><span><span class="italic">type name</span>[ ][ ]…[ ] = new <span class="italic">type</span>[<span class="italic">size1</span>][<span class="italic">size2</span>]…[<span class="italic">sizeN</span>];</span></div>
+<div class="calibre27"><span>For example, the following declaration creates a 4 × 10 × 3 three-dimensional integer array.</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00299.jpg" class="calibre329"/></span></div><div class="calibre11"> </div>
+<div id="filepos472914" class="calibre1"><span class="calibre10"><span><span class="bold1">Initializing Multidimensional Arrays</span></span></span></div>
+<div class="calibre12"><span>A multidimensional array can be initialized by enclosing each dimension’s initializer list within its own set of curly braces. For example, the general form of array initialization for a two-dimensional array is shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00300.jpg" class="calibre330"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>Here, <span class="italic">val</span> indicates an initialization value. Each inner block designates a row. Within each row, the first value will be stored in the first position of the subarray, the second value in the second position, and so on. Notice that commas separate the initializer blocks and that a semicolon follows the closing }.</span></div>
+<div class="calibre23"><span>For example, the following program initializes an array called <span class="bold1">sqrs</span> with the numbers 1 through 10 and their squares:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00301.jpg" class="calibre331"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>Here is the output from the program:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00302.jpg" class="calibre332"/></span></div><div class="calibre11"> </div>
+<div id="filepos474440" class="calibre1"><span class="calibre10"><span><span class="bold1">Alternative Array Declaration Syntax</span></span></span></div>
+<div class="calibre12"><span>There is a second form that can be used to declare an array:</span></div>
+<div class="calibre27"><span><span class="italic">type</span>[ ] <span class="italic">var-name</span>;</span></div>
+<div class="calibre27"><span>Here, the square brackets follow the type specifier, not the name of the array variable. For example, the following two declarations are equivalent:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00303.jpg" class="calibre333"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>The following declarations are also equivalent:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00304.jpg" class="calibre334"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>This alternative declaration form offers convenience when declaring several arrays at the same time. For example,</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00305.jpg" class="calibre335"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>This creates three array variables of type <span class="bold1">int</span>. It is the same as writing</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00306.jpg" class="calibre82"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>The alternative declaration form is also useful when specifying an array as a return type for a method. For example,</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00307.jpg" class="calibre336"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>This declares that <span class="bold1">someMeth( )</span> returns an array of type <span class="bold1">int</span>.</span></div>
+<div class="calibre23"><span>Because both forms of array declarations are in widespread use, both are used in this book.</span></div>
+<div id="filepos476592" class="calibre1"><span class="calibre10"><span><span class="bold1">Assigning Array References</span></span></span></div>
+<div class="calibre12"><span>As with other objects, when you assign one array reference variable to another, you are simply changing what object that variable refers to. You are not causing a copy of the array to be made, nor are you causing the contents of one array to be copied to the other. For example, consider this program:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00308.jpg" class="calibre337"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>The output from the program is shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00309.jpg" class="calibre338"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>As the output shows, after the assignment of <span class="bold1">nums1</span> to <span class="bold1">nums2</span>, both array reference variables refer to the same object.</span></div>
+<div id="filepos477663" class="calibre1"><span class="calibre10"><span><span class="bold1">Using the length Member</span></span></span></div>
+<div class="calibre12"><span>Because arrays are implemented as objects, each array has associated with it a <span class="bold1">length</span> instance variable that contains the number of elements that the array can hold. (In other words, <span class="bold1">length</span> contains the size of the array.) Here is a program that demonstrates this property:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00310.jpg" class="calibre339"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>This program displays the following output:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00311.jpg" class="calibre340"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>Pay special attention to the way <span class="bold1">length</span> is used with the two-dimensional array <span class="bold1">table</span>. As explained, a two-dimensional array is an array of arrays. Thus, when the expression</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00312.jpg" class="calibre341"/></span></div><div class="calibre11"> </div>
+<div class="calibre27"><span>is used, it obtains the number of arrays stored in table, which is 3 in this case. To obtain the length of any individual array in table, you will use an expression such as this,</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00313.jpg" class="calibre342"/></span></div><div class="calibre11"> </div>
+<div class="calibre27"><span>which, in this case, obtains the length of the first array.</span></div>
+<div class="calibre23"><span>One other thing to notice in <span class="bold1">LengthDemo</span> is the way that <span class="bold1">list.length</span> is used by the <span class="bold1">for</span> loops to govern the number of iterations that take place. Since each array carries with it its own length, you can use this information rather than manually keeping track of an array’s size. Keep in mind that the value of <span class="bold1">length</span> has nothing to do with the number of elements that are actually in use. It contains the number of elements that the array is capable of holding.</span></div>
+<div class="calibre23"><span>The inclusion of the <span class="bold1">length</span> member simplifies many algorithms by making certain types of array operations easier—and safer—to perform. For example, the following program uses <span class="bold1">length</span> to copy one array to another while preventing an array overrun and its attendant runtime exception.</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00314.jpg" class="calibre343"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>Here, <span class="bold1">length</span> helps perform two important functions. First, it is used to confirm that the target array is large enough to hold the contents of the source array. Second, it provides the termination condition of the <span class="bold1">for</span> loop that performs the copy. Of course, in this simple example, the sizes of the arrays are easily known, but this same approach can be applied to a wide range of more challenging situations.</span></div>
+<div class="calibre18"> </div><table cellspacing="0" cellpadding="0" class="calibre37">
+<colgroup class="calibre38">
+<col class="calibre72"/>
+<col class="calibre73"/>
+</colgroup>
+<tr class="calibre41">
+<td valign="top" id="filepos481142" class="calibre74"><span class="calibre10"><span class="bold1">Try This 5-2</span> </span></td>
+<td valign="top" class="calibre75"><span class="calibre10">A Queue Class</span></td>
+</tr></table><div class="calibre43"> </div>
+<div class="calibre1"><span><img alt="image" src="images/00315.jpg" class="calibre344"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>As you may know, a data structure is a means of organizing data. The simplest data structure is the array, which is a linear list that supports random access to its elements. Arrays are often used as the underpinning for more sophisticated data structures, such as stacks and queues. A <span class="italic">stack</span> is a list in which elements can be accessed in first-in, last-out (FILO) order only. A <span class="italic">queue</span> is a list in which elements can be accessed in first-in, first-out (FIFO) order only. Thus, a stack is like a stack of plates on a table—the first down is the last to be used. A queue is like a line at a bank—the first in line is the first served.</span></div>
+<div class="calibre23"><span>What makes data structures such as stacks and queues interesting is that they combine storage for information with the methods that access that information. Thus, stacks and queues are <span class="italic">data engines</span> in which storage and retrieval are provided by the data structure itself, not manually by your program. Such a combination is, obviously, an excellent choice for a class, and in this project you will create a simple queue class.</span></div>
+<div class="calibre23"><span>In general, queues support two basic operations: put and get. Each put operation places a new element on the end of the queue. Each get operation retrieves the next element from the front of the queue. Queue operations are <span class="italic">consumptive</span>: once an element has been retrieved, it cannot be retrieved again. The queue can also become full, if there is no space available to store an item, and it can become empty, if all of the elements have been removed.</span></div>
+<div class="calibre23"><span>One last point: There are two basic types of queues—circular and noncircular. A <span class="italic">circular queue</span> reuses locations in the underlying array when elements are removed. A <span class="italic">noncircular queue</span> does not reuse locations and eventually becomes exhausted. For the sake of simplicity, this example creates a noncircular queue, but with a little thought and effort, you can easily transform it into a circular queue.</span></div>
+<div class="calibre19"><span>  <span class="bold1">1.</span>  Create a file called <span class="bold1">QDemo.java</span>.</span></div>
+<div class="calibre47"><span>  <span class="bold1">2.</span>  Although there are other ways to support a queue, the method we will use is based upon an array. That is, an array will provide the storage for the items put into the queue. This array will be accessed through two indices. The <span class="italic">put</span> index determines where the next element of data will be stored. The <span class="italic">get</span> index indicates at what location the next element of data will be obtained. Keep in mind that the get operation is consumptive, and it is not possible to retrieve the same element twice. Although the queue that we will be creating stores characters, the same logic can be used to store any type of object. Begin creating the <span class="bold1">Queue</span> class with these lines:</span></div>
+<div class="calibre47"><span>        <img alt="image" src="images/00316.jpg" class="calibre345"/></span></div>
+<div class="calibre47"><span>  <span class="bold1">3.</span>  The constructor for the <span class="bold1">Queue</span> class creates a queue of a given size. Here is the <span class="bold1">Queue</span> constructor:</span></div>
+<div class="calibre47"><span>        <img alt="image" src="images/00317.jpg" class="calibre346"/></span></div>
+<div class="calibre47"><span>        Notice that the put and get indices are initially set to zero.</span></div>
+<div class="calibre47"><span>  <span class="bold1">4.</span>  The <span class="bold1">put( )</span> method, which stores elements, is shown next:</span></div>
+<div class="calibre47"><span>        <img alt="image" src="images/00318.jpg" class="calibre347"/></span></div>
+<div class="calibre47"><span>        The method begins by checking for a queue-full condition. If <span class="bold1">putloc</span> is equal to one past the last location in the <span class="bold1">q</span> array, there is no more room in which to store elements. Otherwise, the new element is stored at that location and <span class="bold1">putloc</span> is incremented. Thus, <span class="bold1">putloc</span> is always the index where the next element will be stored.</span></div>
+<div class="calibre47"><span>  <span class="bold1">5.</span>  To retrieve elements, use the <span class="bold1">get( )</span> method, shown next:</span></div>
+<div class="calibre47"><span>        <img alt="image" src="images/00319.jpg" class="calibre348"/></span></div>
+<div class="calibre47"><span>        Notice first the check for queue-empty. If <span class="bold1">getloc</span> and <span class="bold1">putloc</span> both index the same element, the queue is assumed to be empty. This is why <span class="bold1">getloc</span> and <span class="bold1">putloc</span> were both initialized to zero by the <span class="bold1">Queue</span> constructor. Then, the next element is returned. In the process, <span class="bold1">getloc</span> is incremented. Thus, <span class="bold1">getloc</span> always indicates the location of the next element to be retrieved.</span></div>
+<div class="calibre47"><span>  <span class="bold1">6.</span>  Here is the entire <span class="bold1">QDemo.java</span> program:</span></div>
+<div class="calibre47"><span>        <img alt="image" src="images/00320.jpg" class="calibre349"/></span></div>
+<div class="calibre47"><span>        <img alt="image" src="images/00321.jpg" class="calibre350"/></span></div>
+<div class="calibre47"><span>        <img alt="image" src="images/00322.jpg" class="calibre351"/></span></div>
+<div class="calibre47"><span>  <span class="bold1">7.</span>  The output produced by the program is shown here:</span></div>
+<div class="calibre47"><span>        <img alt="image" src="images/00323.jpg" class="calibre352"/></span></div>
+<div class="calibre47"><span>  <span class="bold1">8.</span>  On your own, try modifying <span class="bold1">Queue</span> so that it stores other types of objects. For example, have it store <span class="bold1">int</span>s or <span class="bold1">double</span>s.</span></div>
+<div class="calibre36"><span><img alt="image" src="images/00005.jpg" class="calibre34"/></span></div><div class="calibre18"> </div>
+<div id="filepos489092" class="calibre9"><span class="calibre10"><span><span class="bold1">The For-Each Style for Loop</span></span></span></div>
+<div class="calibre12"><span>When working with arrays, it is common to encounter situations in which each element in an array must be examined, from start to finish. For example, to compute the sum of the values held in an array, each element in the array must be examined. The same situation occurs when computing an average, searching for a value, copying an array, and so on. Because such “start to finish” operations are so common, Java defines a second form of the <span class="bold1">for</span> loop that streamlines this operation.</span></div>
+<div class="calibre23"><span>The second form of the <span class="bold1">for</span> implements a “for-each” style loop. A for-each loop cycles through a collection of objects, such as an array, in strictly sequential fashion, from start to finish. In recent years, for-each style loops have gained popularity among both computer language designers and programmers. Originally, Java did not offer a for-each style loop. However, with the release of JDK 5, the <span class="bold1">for</span> loop was enhanced to provide this option. The for-each style of <span class="bold1">for</span> is also referred to as the <span class="italic">enhanced</span>
+<span class="bold1"><span class="italic">for</span></span>
+<span class="italic">loop</span>. Both terms are used in this book.</span></div>
+<div class="calibre23"><span>The general form of the for-each style <span class="bold1">for</span> is shown here.</span></div>
+<div class="calibre27"><span>for(<span class="italic">type itr-var : collection</span>) <span class="italic">statement-block</span></span></div>
+<div class="calibre27"><span>Here, <span class="italic">type</span> specifies the type, and <span class="italic">itr-var</span> specifies the name of an <span class="italic">iteration variable</span> that will receive the elements from a collection, one at a time, from beginning to end. The collection being cycled through is specified by <span class="italic">collection</span>. There are various types of collections that can be used with the <span class="bold1">for</span>, but the only type used in this book is the array. With each iteration of the loop, the next element in the collection is retrieved and stored in <span class="italic">itr-var</span>. The loop repeats until all elements in the collection have been obtained. Thus, when iterating over an array of size <span class="italic">N</span>, the enhanced <span class="bold1">for</span> obtains the elements in the array in index order, from 0 to <span class="italic">N</span>–1.</span></div>
+<div class="calibre23"><span>Because the iteration variable receives values from the collection, <span class="italic">type</span> must be the same as (or compatible with) the elements stored in the collection. Thus, when iterating over arrays, <span class="italic">type</span> must be compatible with the element type of the array.</span></div>
+<div class="calibre23"><span>To understand the motivation behind a for-each style loop, consider the type of <span class="bold1">for</span> loop that it is designed to replace. The following fragment uses a traditional <span class="bold1">for</span> loop to compute the sum of the values in an array:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00324.jpg" class="calibre353"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>To compute the sum, each element in <span class="bold1">nums</span> is read, in order, from start to finish. Thus, the entire array is read in strictly sequential order. This is accomplished by manually indexing the <span class="bold1">nums</span> array by <span class="bold1">i</span>, the loop control variable. Furthermore, the starting and ending value for the loop control variable, and its increment, must be explicitly specified.</span></div>
+<div class="calibre35"><span><img alt="image" src="images/00005.jpg" class="calibre34"/></span></div>
+<div class="calibre9"><span class="calibre10"><span><span class="bold1">Ask the Expert</span></span></span></div>
+<div class="calibre19"><span><span class="bold1"><span><span class="calibre10">Q</span></span>:   Aside from arrays, what other types of collections can the for-each style</span> for <span class="bold1">loop cycle through?</span></span></div>
+<div class="calibre19"><span><span class="bold1"><span><span class="calibre10">A</span></span>:</span>   One of the most important uses of the for-each style <span class="bold1">for</span> is to cycle through the contents of a collection defined by the Collections Framework. The Collections Framework is a set of classes that implement various data structures, such as lists, vectors, sets, and maps. A discussion of the Collections Framework is beyond the scope of this book, but complete coverage of the Collections Framework can be found in my book <span class="italic">Java: The Complete Reference, Ninth Edition</span> (Oracle Press/McGraw-Hill Education, 2014).</span></div>
+<div class="calibre36"><span><img alt="image" src="images/00005.jpg" class="calibre34"/></span></div><div class="calibre18"> </div>
+<div class="calibre23"><span>The for-each style <span class="bold1">for</span> automates the preceding loop. Specifically, it eliminates the need to establish a loop counter, specify a starting and ending value, and manually index the array. Instead, it automatically cycles through the entire array, obtaining one element at a time, in sequence, from beginning to end. For example, here is the preceding fragment rewritten using a for-each version of the <span class="bold1">for:</span></span></div>
+<div class="calibre1"><span><img alt="image" src="images/00325.jpg" class="calibre353"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>With each pass through the loop, <span class="bold1">x</span> is automatically given a value equal to the next element in <span class="bold1">nums</span>. Thus, on the first iteration, <span class="bold1">x</span> contains 1, on the second iteration, <span class="bold1">x</span> contains 2, and so on. Not only is the syntax streamlined, it also prevents boundary errors.</span></div>
+<div class="calibre23"><span>Here is an entire program that demonstrates the for-each version of the <span class="bold1">for</span> just described:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00326.jpg" class="calibre354"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>The output from the program is shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00327.jpg" class="calibre355"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>As this output shows, the for-each style <span class="bold1">for</span> automatically cycles through an array in sequence from the lowest index to the highest.</span></div>
+<div class="calibre23"><span>Although the for-each <span class="bold1">for</span> loop iterates until all elements in an array have been examined, it is possible to terminate the loop early by using a <span class="bold1">break</span> statement. For example, this loop sums only the first five elements of <span class="bold1">nums</span>:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00328.jpg" class="calibre356"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>There is one important point to understand about the for-each style <span class="bold1">for</span> loop. Its iteration variable is “read-only” as it relates to the underlying array. An assignment to the iteration variable has no effect on the underlying array. In other words, you can’t change the contents of the array by assigning the iteration variable a new value. For example, consider this program:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00329.jpg" class="calibre357"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>The first <span class="bold1">for</span> loop increases the value of the iteration variable by a factor of 10. However, this assignment has no effect on the underlying array <span class="bold1">nums</span>, as the second <span class="bold1">for</span> loop illustrates. The output, shown here, proves this point:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00330.jpg" class="calibre358"/></span></div><div class="calibre11"> </div>
+<div id="filepos497298" class="calibre1"><span class="calibre10"><span><span class="bold1">Iterating Over Multidimensional Arrays</span></span></span></div>
+<div class="calibre12"><span>The enhanced <span class="bold1">for</span> also works on multidimensional arrays. Remember, however, that in Java, multidimensional arrays consist of <span class="italic">arrays of arrays</span>. (For example, a two-dimensional array is an array of one-dimensional arrays.) This is important when iterating over a multidimensional array because each iteration obtains the <span class="italic">next array</span>, not an individual element. Furthermore, the iteration variable in the <span class="bold1">for</span> loop must be compatible with the type of array being obtained. For example, in the case of a two-dimensional array, the iteration variable must be a reference to a one-dimensional array. In general, when using the for-each <span class="bold1">for</span> to iterate over an array of <span class="italic">N</span> dimensions, the objects obtained will be arrays of <span class="italic">N</span>–1 dimensions. To understand the implications of this, consider the following program. It uses nested <span class="bold1">for</span> loops to obtain the elements of a two-dimensional array in row order, from first to last.</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00331.jpg" class="calibre359"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>The output from this program is shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00332.jpg" class="calibre360"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>In the program, pay special attention to this line:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00333.jpg" class="calibre361"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>Notice how <span class="bold1">x</span> is declared. It is a reference to a one-dimensional array of integers. This is necessary because each iteration of the <span class="bold1">for</span> obtains the next <span class="italic">array</span> in <span class="bold1">nums</span>, beginning with the array specified by <span class="bold1">nums[0]</span>. The inner <span class="bold1">for</span> loop then cycles through each of these arrays, displaying the values of each element.</span></div>
+<div id="filepos499526" class="calibre1"><span class="calibre10"><span><span class="bold1">Applying the Enhanced for</span></span></span></div>
+<div class="calibre12"><span>Since the for-each style <span class="bold1">for</span> can only cycle through an array sequentially, from start to finish, you might think that its use is limited. However, this is not true. A large number of algorithms require exactly this mechanism. One of the most common is searching. For example, the following program uses a <span class="bold1">for</span> loop to search an unsorted array for a value. It stops if the value is found.</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00334.jpg" class="calibre362"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>The for-each style <span class="bold1">for</span> is an excellent choice in this application because searching an unsorted array involves examining each element in sequence. (Of course, if the array were sorted, a binary search could be used, which would require a different style loop.) Other types of applications that benefit from for-each style loops include computing an average, finding the minimum or maximum of a set, looking for duplicates, and so on.</span></div>
+<div class="calibre23"><span>Now that the for-each style <span class="bold1">for</span> has been introduced, it will be used where appropriate throughout the remainder of this book.</span></div>
+<div id="filepos500973" class="calibre1"><span class="calibre10"><span><span class="bold1">Strings</span></span></span></div>
+<div class="calibre12"><span>From a day-to-day programming standpoint, one of the most important of Java’s data types is <span class="bold1">String</span>. <span class="bold1">String</span> defines and supports character strings. In many other programming languages, a string is an array of characters. This is not the case with Java. In Java, strings are objects.</span></div>
+<div class="calibre23"><span>Actually, you have been using the <span class="bold1">String</span> class since <a href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos130552">Chapter 1</a>, but you did not know it. When you create a string literal, you are actually creating a <span class="bold1">String</span> object. For example, in the statement</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00335.jpg" class="calibre363"/></span></div><div class="calibre11"> </div>
+<div class="calibre27"><span>the string "In Java, strings are objects." is automatically made into a <span class="bold1">String</span> object by Java. Thus, the use of the <span class="bold1">String</span> class has been “below the surface” in the preceding programs. In the following sections, you will learn to handle it explicitly. Be aware, however, that the <span class="bold1">String</span> class is quite large, and we will only scratch its surface here. It is a class that you will want to explore on its own.</span></div>
+<div id="filepos502410" class="calibre1"><span class="calibre10"><span><span class="bold1">Constructing Strings</span></span></span></div>
+<div class="calibre12"><span>You can construct a <span class="bold1">String</span> just like you construct any other type of object: by using <span class="bold1">new</span> and calling the <span class="bold1">String</span> constructor. For example:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00336.jpg" class="calibre191"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>This creates a <span class="bold1">String</span> object called <span class="bold1">str</span> that contains the character string "Hello". You can also construct a <span class="bold1">String</span> from another <span class="bold1">String</span>. For example:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00337.jpg" class="calibre364"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>After this sequence executes, <span class="bold1">str2</span> will also contain the character string "Hello".</span></div>
+<div class="calibre23"><span>Another easy way to create a <span class="bold1">String</span> is shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00338.jpg" class="calibre365"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>In this case, <span class="bold1">str</span> is initialized to the character sequence "Java strings are powerful."</span></div>
+<div class="calibre23"><span>Once you have created a <span class="bold1">String</span> object, you can use it anywhere that a quoted string is allowed. For example, you can use a <span class="bold1">String</span> object as an argument to <span class="bold1">println( )</span>, as shown in this example:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00339.jpg" class="calibre215"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>The output from the program is shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00340.jpg" class="calibre366"/></span></div><div class="calibre11"> </div>
+<div id="filepos504549" class="calibre1"><span class="calibre10"><span><span class="bold1">Operating on Strings</span></span></span></div>
+<div class="calibre12"><span>The <span class="bold1">String</span> class contains several methods that operate on strings. Here are the general forms for a few:</span></div>
+<div class="calibre11"> </div><table cellpadding="3" cellspacing="0" border="1" class="calibre37">
+<colgroup class="calibre38">
+<col class="calibre39"/>
+<col class="calibre40"/>
+</colgroup>
+<tr class="calibre41">
+<td valign="top" class="calibre42">boolean equals(<span class="italic">str</span>)</td>
+<td valign="top" class="calibre42">Returns true if the invoking string contains the same character sequence as <span class="italic">str</span>.</td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">int length( )</td>
+<td valign="top" class="calibre42">Obtains the length of a string.</td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">char charAt(<span class="italic">index</span>)</td>
+<td valign="top" class="calibre42">Obtains the character at the index specified by <span class="italic">index</span>.</td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">int compareTo(<span class="italic">str</span>)</td>
+<td valign="top" class="calibre42">Returns less than zero if the invoking string is less than <span class="italic">str</span>, greater than zero if the invoking string is greater than <span class="italic">str</span>, and zero if the strings are equal.</td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">int indexOf(<span class="italic">str</span>)</td>
+<td valign="top" class="calibre42">Searches the invoking string for the substring specified by <span class="italic">str</span>. Returns the index of the first match or –1 on failure.</td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">int lastIndexOf(<span class="italic">str</span>)</td>
+<td valign="top" class="calibre42">Searches the invoking string for the substring specified by str. Returns the index of the last match or –1 on failure.</td>
+</tr>
+</table><div class="calibre43"> </div>
+<div class="calibre23"><span>Here is a program that demonstrates these methods:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00341.jpg" class="calibre367"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>This program generates the following output:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00342.jpg" class="calibre368"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>You can <span class="italic">concatenate</span> (join together) two strings using the <span class="bold1">+</span> operator. For example, this statement</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00343.jpg" class="calibre369"/></span></div><div class="calibre11"> </div>
+<div class="calibre27"><span>initializes <span class="bold1">str4</span> with the string "OneTwoThree".</span></div>
+<div class="calibre35"><span><img alt="image" src="images/00005.jpg" class="calibre34"/></span></div>
+<div class="calibre9"><span class="calibre10"><span><span class="bold1">Ask the Expert</span></span></span></div>
+<div class="calibre19"><span><span class="bold1"><span><span class="calibre10">Q</span></span>:   Why does</span> String <span class="bold1">define the</span> equals( ) <span class="bold1">method? Can’t I just use</span> ==<span class="bold1">?</span></span></div>
+<div class="calibre19"><span><span class="bold1"><span><span class="calibre10">A</span></span>:</span>   The <span class="bold1">equals( )</span> method compares the character sequences of two <span class="bold1">String</span> objects for equality. Applying the <span class="bold1">==</span> to two <span class="bold1">String</span> references simply determines whether the two references refer to the same object.</span></div>
+<div class="calibre36"><span><img alt="image" src="images/00005.jpg" class="calibre34"/></span></div><div class="calibre18"> </div>
+<div id="filepos508658" class="calibre9"><span class="calibre10"><span><span class="bold1">Arrays of Strings</span></span></span></div>
+<div class="calibre12"><span>Like any other data type, strings can be assembled into arrays. For example:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00344.jpg" class="calibre370"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>Here is the output from this program:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00345.jpg" class="calibre371"/></span></div><div class="calibre11"> </div>
+<div id="filepos509299" class="calibre1"><span class="calibre10"><span><span class="bold1">Strings Are Immutable</span></span></span></div>
+<div class="calibre12"><span>The contents of a <span class="bold1">String</span> object are immutable. That is, once created, the character sequence that makes up the string cannot be altered. This restriction allows Java to implement strings more efficiently. Even though this probably sounds like a serious drawback, it isn’t. When you need a string that is a variation on one that already exists, simply create a new string that contains the desired changes. Since unused <span class="bold1">String</span> objects are automatically garbage collected, you don’t even need to worry about what happens to the discarded strings. It must be made clear, however, that <span class="bold1">String</span> reference variables may, of course, change the object to which they refer. It is just that the contents of a specific <span class="bold1">String</span> object cannot be changed after it is created.</span></div>
+<div class="calibre35"><span><img alt="image" src="images/00005.jpg" class="calibre34"/></span></div>
+<div class="calibre9"><span class="calibre10"><span><span class="bold1">Ask the Expert</span></span></span></div>
+<div class="calibre19"><span><span class="bold1"><span><span class="calibre10">Q</span></span>:   You say that once created</span>, String <span class="bold1">objects are immutable. I understand that, from a practical point of view, this is not a serious restriction, but what if I want to create a string that can be changed?</span></span></div>
+<div class="calibre19"><span><span class="bold1"><span><span class="calibre10">A</span></span>:</span>   You’re in luck. Java offers a class called <span class="bold1">StringBuffer</span>, which creates string objects that can be changed. For example, in addition to the <span class="bold1">charAt( )</span> method, which obtains the character at a specific location, <span class="bold1">StringBuffer</span> defines <span class="bold1">setCharAt( )</span>, which sets a character within the string. Java also supplies <span class="bold1">StringBuilder</span>, which is related to <span class="bold1">StringBuffer</span>, and also supports strings that can be changed. However, for most purposes you will want to use <span class="bold1">String</span>, not <span class="bold1">StringBuffer</span> or <span class="bold1">StringBuilder</span>.</span></div>
+<div class="calibre36"><span><img alt="image" src="images/00005.jpg" class="calibre34"/></span></div><div class="calibre18"> </div>
+<div class="calibre23"><span>To fully understand why immutable strings are not a hindrance, we will use another of <span class="bold1">String</span>’s methods: <span class="bold1">substring( )</span>. The <span class="bold1">substring( )</span> method returns a new string that contains a specified portion of the invoking string. Because a new <span class="bold1">String</span> object is manufactured that contains the substring, the original string is unaltered, and the rule of immutability remains intact. The form of <span class="bold1">substring( )</span> that we will be using is shown here:</span></div>
+<div class="calibre27"><span>String substring(int <span class="italic">startIndex</span>, int <span class="italic">endIndex</span>)</span></div>
+<div class="calibre27"><span>Here, <span class="italic">startIndex</span> specifies the beginning index, and <span class="italic">endIndex</span> specifies the stopping point. Here is a program that demonstrates <span class="bold1">substring( )</span> and the principle of immutable strings:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00346.jpg" class="calibre372"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>Here is the output from the program:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00347.jpg" class="calibre373"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>As you can see, the original string <span class="bold1">orgstr</span> is unchanged, and <span class="bold1">substr</span> contains the substring.</span></div>
+<div id="filepos513230" class="calibre1"><span class="calibre10"><span><span class="bold1">Using a String to Control a switch Statement</span></span></span></div>
+<div class="calibre12"><span>As explained in <a href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html#filepos313915">Chapter 3</a>, prior to JDK 7, a <span class="bold1">switch</span> had to be controlled by an integer type, such as <span class="bold1">int</span> or <span class="bold1">char</span>. This precluded the use of a <span class="bold1">switch</span> in situations in which one of several actions is selected based on the contents of a string. Instead, an <span class="bold1">if</span>-<span class="bold1">else</span>-<span class="bold1">if</span> ladder was the typical solution. Although an <span class="bold1">if</span>-<span class="bold1">else</span>-<span class="bold1">if</span> ladder is semantically correct, a <span class="bold1">switch</span> statement would be the more natural idiom for such a selection. Fortunately, this situation has been remedied. Today, you can use a <span class="bold1">String</span> to control a switch. This results in more readable, streamlined code in many situations.</span></div>
+<div class="calibre23"><span>Here is an example that demonstrates controlling a <span class="bold1">switch</span> with a <span class="bold1">String</span>:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00348.jpg" class="calibre374"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>As you would expect, the output from the program is</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00349.jpg" class="calibre375"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>The string contained in <span class="bold1">command</span> (which is "cancel" in this program) is tested against the <span class="bold1">case</span> constants. When a match is found (as it is in the second <span class="bold1">case</span>), the code sequence associated with that sequence is executed.</span></div>
+<div class="calibre23"><span>Being able to use strings in a <span class="bold1">switch</span> statement can be very convenient and can improve the readability of some code. For example, using a string-based <span class="bold1">switch</span> is an improvement over using the equivalent sequence of <span class="bold1">if</span>/<span class="bold1">else</span> statements. However, switching on strings can be less efficient than switching on integers. Therefore, it is best to switch on strings only in cases in which the controlling data is already in string form. In other words, don’t use strings in a <span class="bold1">switch</span> unnecessarily.</span></div>
+<div id="filepos515614" class="calibre1"><span class="calibre10"><span><span class="bold1">Using Command-Line Arguments</span></span></span></div>
+<div class="calibre12"><span>Now that you know about the <span class="bold1">String</span> class, you can understand the <span class="bold1">args</span> parameter to <span class="bold1">main( )</span> that has been in every program shown so far. Many programs accept what are called <span class="italic">command-line arguments</span>. A command-line argument is the information that directly follows the program’s name on the command line when it is executed. To access the command-line arguments inside a Java program is quite easy—they are stored as strings in the <span class="bold1">String</span> array passed to <span class="bold1">main( )</span>. For example, the following program displays all of the command-line arguments that it is called with:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00350.jpg" class="calibre376"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>If <span class="bold1">CLDemo</span> is executed like this,</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00351.jpg" class="calibre377"/></span></div><div class="calibre11"> </div>
+<div class="calibre27"><span>you will see the following output:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00352.jpg" class="calibre378"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>Notice that the first argument is stored at index 0, the second argument is stored at index 1, and so on.</span></div>
+<div class="calibre23"><span>To get a taste of the way command-line arguments can be used, consider the next program. It takes one command-line argument that specifies a person’s name. It then searches through a two-dimensional array of strings for that name. If it finds a match, it displays that person’s telephone number.</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00353.jpg" class="calibre379"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>Here is a sample run:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00354.jpg" class="calibre380"/></span></div><div class="calibre11"> </div>
+<div id="filepos517953" class="calibre1"><span class="calibre10"><span><span class="bold1">The Bitwise Operators</span></span></span></div>
+<div class="calibre12"><span>In <a href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos231144">Chapter 2</a> you learned about Java’s arithmetic, relational, and logical operators. Although these are the most commonly used, Java provides additional operators that expand the set of problems to which Java can be applied: the bitwise operators. The bitwise operators can be used on values of type <span class="bold1">long</span>, <span class="bold1">int</span>, <span class="bold1">short</span>, <span class="bold1">char</span>, or <span class="bold1">byte</span>. Bitwise operations cannot be used on <span class="bold1">boolean</span>, <span class="bold1">float</span>, or <span class="bold1">double</span>, or class types. They are called the bitwise operators because they are used to test, set, or shift the individual bits that make up a value. Bitwise operations are important to a wide variety of systems-level programming tasks in which status information from a device must be interrogated or constructed. <a href="#filepos519004">Table 5-1</a> lists the bitwise operators.</span></div>
+<div class="calibre28">
+<div id="filepos519004" class="calibre44"><span><img alt="image" src="images/00355.jpg" class="calibre381"/></span></div>
+<div class="calibre9"><span><img alt="image" src="images/00057.jpg" class="calibre34"/></span></div>
+<div class="calibre9"><span><span class="bold1">Table 5-1</span>   The Bitwise Operators</span></div><div class="calibre18"> </div>
+</div>
+<div id="filepos519405" class="calibre9"><span class="calibre10"><span><span class="bold1">The Bitwise AND, OR, XOR, and NOT Operators</span></span></span></div>
+<div class="calibre12"><span>The bitwise operators AND, OR, XOR, and NOT are <span class="bold1">&amp;</span>, |, ^, and ~. They perform the same operations as their Boolean logical equivalents described in <a href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos231144">Chapter 2</a>. The difference is that the bitwise operators work on a bit-by-bit basis. The following table shows the outcome of each operation using 1’s and 0’s:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00356.jpg" class="calibre382"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>In terms of its most common usage, you can think of the bitwise AND as a way to turn bits off. That is, any bit that is 0 in either operand will cause the corresponding bit in the outcome to be set to 0. For example:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00357.jpg" class="calibre383"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>The following program demonstrates the <span class="bold1">&amp;</span> by turning any lowercase letter into uppercase by resetting the 6th bit to 0. As the Unicode/ASCII character set is defined, the lowercase letters are the same as the uppercase ones except that the lowercase ones are greater in value by exactly 32. Therefore, to transform a lowercase letter to uppercase, just turn off the 6th bit, as this program illustrates:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00358.jpg" class="calibre384"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>The output from this program is shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00359.jpg" class="calibre385"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>The value 65,503 used in the AND statement is the decimal representation of 1111 1111 1101 1111. Thus, the AND operation leaves all bits in <span class="bold1">ch</span> unchanged except for the 6th one, which is set to 0.</span></div>
+<div class="calibre23"><span>The AND operator is also useful when you want to determine whether a bit is on or off. For example, this statement determines whether bit 4 in <span class="bold1">status</span> is set:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00360.jpg" class="calibre386"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>The number 8 is used because it translates into a binary value that has only the 4th bit set. Therefore, the <span class="bold1">if</span> statement can succeed only when bit 4 of <span class="bold1">status</span> is also on. An interesting use of this concept is to show the bits of a <span class="bold1">byte</span> value in binary format.</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00361.jpg" class="calibre387"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>The output is shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00362.jpg" class="calibre388"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>The <span class="bold1">for</span> loop successively tests each bit in <span class="bold1">val</span>, using the bitwise AND, to determine whether it is on or off. If the bit is on, the digit <span class="bold1">1</span> is displayed; otherwise, <span class="bold1">0</span> is displayed. In <a href="#filepos534542">Try This 5-3</a>, you will see how this basic concept can be expanded to create a class that will display the bits in any type of integer.</span></div>
+<div class="calibre23"><span>The bitwise OR, as the reverse of AND, can be used to turn bits on. Any bit that is set to 1 in either operand will cause the corresponding bit in the result to be set to 1. For example:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00363.jpg" class="calibre389"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>We can make use of the OR to change the uppercasing program into a lowercasing program, as shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00364.jpg" class="calibre357"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>The output from this program is shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00365.jpg" class="calibre390"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>The program works by ORing each character with the value 32, which is 0000 0000 0010 0000 in binary. Thus, 32 is the value that produces a value in binary in which only the 6th bit is set. When this value is ORed with any other value, it produces a result in which the 6th bit is set and all other bits remain unchanged. As explained, for characters this means that each uppercase letter is transformed into its lowercase equivalent.</span></div>
+<div class="calibre23"><span>An exclusive OR, usually abbreviated XOR, will set a bit on if, and only if, the bits being compared are different, as illustrated here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00366.jpg" class="calibre391"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>The XOR operator has an interesting property that makes it a simple way to encode a message. When some value X is XORed with another value Y, and then that result is XORed with Y again, X is produced. That is, given the sequence</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00367.jpg" class="calibre392"/></span></div><div class="calibre11"> </div>
+<div class="calibre27"><span>then R2 is the same value as X. Thus, the outcome of a sequence of two XORs can produce the original value.</span></div>
+<div class="calibre23"><span>You can use this principle to create a simple cipher program in which some integer is the key that is used to both encode and decode a message by XORing the characters in that message. To encode, the XOR operation is applied the first time, yielding the cipher text. To decode, the XOR is applied a second time, yielding the plain text. Of course, such a cipher has no practical value, being trivially easy to break. It does, however, provide an interesting way to demonstrate the XOR. Here is a program that uses this approach to encode and decode a short message:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00368.jpg" class="calibre393"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>Here is the output:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00369.jpg" class="calibre394"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>As you can see, the result of two XORs using the same key produces the decoded message.</span></div>
+<div class="calibre23"><span>The unary one’s complement (NOT) operator reverses the state of all the bits of the operand. For example, if some integer called <span class="bold1">A</span> has the bit pattern 1001 0110, then <span class="bold1">~A</span> produces a result with the bit pattern 0110 1001.</span></div>
+<div class="calibre23"><span>The following program demonstrates the NOT operator by displaying a number and its complement in binary:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00370.jpg" class="calibre395"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>Here is the output:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00371.jpg" class="calibre396"/></span></div><div class="calibre11"> </div>
+<div id="filepos527603" class="calibre1"><span class="calibre10"><span><span class="bold1">The Shift Operators</span></span></span></div>
+<div class="calibre12"><span>In Java it is possible to shift the bits that make up a value to the left or to the right by a specified amount. Java defines the three bit-shift operators shown here:</span></div>
+<div class="calibre11"> </div><table cellpadding="3" cellspacing="0" border="1" class="calibre37">
+<tr class="calibre41">
+<td valign="top" class="calibre42">&lt;&lt;</td>
+<td valign="top" class="calibre42">Left shift</td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">&gt;&gt;</td>
+<td valign="top" class="calibre42">Right shift</td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">&gt;&gt;&gt;</td>
+<td valign="top" class="calibre42">Unsigned right shift</td>
+</tr>
+</table><div class="calibre43"> </div>
+<div class="calibre23"><span>The general forms for these operators are shown here:</span></div>
+<div class="calibre27"><span><span class="italic">value</span> &lt;&lt; <span class="italic">num-bits</span></span></div>
+<div class="calibre12"><span><span class="italic">value</span> &gt;&gt; <span class="italic">num-bits</span></span></div>
+<div class="calibre12"><span><span class="italic">value</span> &gt;&gt;&gt; <span class="italic">num-bits</span></span></div>
+<div class="calibre27"><span>Here, <span class="italic">value</span> is the value being shifted by the number of bit positions specified by <span class="italic">num-bits</span>.</span></div>
+<div class="calibre23"><span>Each left shift causes all bits within the specified value to be shifted left one position and a 0 bit to be brought in on the right. Each right shift shifts all bits to the right one position and preserves the sign bit. As you may know, negative numbers are usually represented by setting the high-order bit of an integer value to 1, and this is the approach used by Java. Thus, if the value being shifted is negative, each right shift brings in a 1 on the left. If the value is positive, each right shift brings in a 0 on the left.</span></div>
+<div class="calibre23"><span>In addition to the sign bit, there is something else to be aware of when right shifting. Java uses <span class="italic">two’s complement</span> to represent negative values. In this approach negative values are stored by first reversing the bits in the value and then adding 1. Thus, the byte value for –1 in binary is 1111 1111. Right shifting this value will always produce –1!</span></div>
+<div class="calibre23"><span>If you don’t want to preserve the sign bit when shifting right, you can use an unsigned right shift (&gt;&gt;&gt;), which always brings in a 0 on the left. For this reason, the &gt;&gt;&gt; is also called the <span class="italic">zero-fill</span> right shift. You will use the unsigned right shift when shifting bit patterns, such as status codes, that do not represent integers.</span></div>
+<div class="calibre23"><span>For all of the shifts, the bits shifted out are lost. Thus, a shift is not a rotate, and there is no way to retrieve a bit that has been shifted out.</span></div>
+<div class="calibre23"><span>Shown next is a program that graphically illustrates the effect of a left and right shift. Here, an integer is given an initial value of 1, which means that its low-order bit is set. Then, a series of eight shifts are performed on the integer. After each shift, the lower 8 bits of the value are shown. The process is then repeated, except that a 1 is put in the 8th bit position, and right shifts are performed.</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00372.jpg" class="calibre397"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>The output from the program is shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00373.jpg" class="calibre398"/></span></div><div class="calibre11"> </div>
+<div class="calibre1"><span><img alt="image" src="images/00374.jpg" class="calibre399"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>You need to be careful when shifting <span class="bold1">byte</span> and <span class="bold1">short</span> values because Java will automatically promote these types to <span class="bold1">int</span> when evaluating an expression. For example, if you right shift a <span class="bold1">byte</span> value, it will first be promoted to <span class="bold1">int</span> and then shifted. The result of the shift will also be of type <span class="bold1">int</span>. Often this conversion is of no consequence. However, if you shift a negative <span class="bold1">byte</span> or <span class="bold1">short</span> value, it will be sign-extended when it is promoted to <span class="bold1">int</span>. Thus, the high-order bits of the resulting integer value will be filled with ones. This is fine when performing a normal right shift. But when you perform a zero-fill right shift, there are 24 ones to be shifted before the byte value begins to see zeros.</span></div>
+<div id="filepos532844" class="calibre1"><span class="calibre10"><span><span class="bold1">Bitwise Shorthand Assignments</span></span></span></div>
+<div class="calibre12"><span>All of the binary bitwise operators have a shorthand form that combines an assignment with the bitwise operation. For example, the following two statements both assign to <span class="bold1">x</span> the outcome of an XOR of <span class="bold1">x</span> with the value 127.</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00375.jpg" class="calibre400"/></span></div><div class="calibre11"> </div>
+<div class="calibre29"><span><img alt="image" src="images/00005.jpg" class="calibre34"/></span></div>
+<div class="calibre9"><span class="calibre10"><span><span class="bold1">Ask the Expert</span></span></span></div>
+<div class="calibre19"><span><span class="bold1"><span><span class="calibre10">Q</span></span>:   Since binary is based on powers of two, can the shift operators be used as a shortcut for multiplying or dividing an integer by two?</span></span></div>
+<div class="calibre19"><span><span class="bold1"><span><span class="calibre10">A</span></span>:</span>   Yes. The bitwise shift operators can be used to perform very fast multiplication or division by two. A shift left doubles a value. A shift right halves it.</span></div>
+<div class="calibre36"><span><img alt="image" src="images/00005.jpg" class="calibre34"/></span></div><div class="calibre18"> </div>
+<div class="calibre11"> </div><table cellspacing="0" cellpadding="0" class="calibre37">
+<colgroup class="calibre38">
+<col class="calibre72"/>
+<col class="calibre73"/>
+</colgroup>
+<tr class="calibre41">
+<td valign="top" id="filepos534542" class="calibre74"><span class="calibre10"><span class="bold1">Try This 5-3</span> </span></td>
+<td valign="top" class="calibre75"><span class="calibre10">A ShowBits Class</span></td>
+</tr></table><div class="calibre43"> </div>
+<div class="calibre1"><span><img alt="image" src="images/00376.jpg" class="calibre401"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>This project creates a class called <span class="bold1">ShowBits</span> that enables you to display in binary the bit pattern for any integer value. Such a class can be quite useful in programming. For example, if you are debugging device-driver code, then being able to monitor the data stream in binary is often a benefit.</span></div>
+<div class="calibre19"><span>  <span class="bold1">1.</span>  Create a file called <span class="bold1">ShowBitsDemo.java</span>.</span></div>
+<div class="calibre47"><span>  <span class="bold1">2.</span>  Begin the <span class="bold1">ShowBits</span> class as shown here:</span></div>
+<div class="calibre47"><span>        <img alt="image" src="images/00377.jpg" class="calibre402"/></span></div>
+<div class="calibre47"><span>        <span class="bold1">ShowBits</span> creates objects that display a specified number of bits. For example, to create an object that will display the low-order 8 bits of some value, use</span></div>
+<div class="calibre47"><span>        <img alt="image" src="images/00378.jpg" class="calibre91"/></span></div>
+<div class="calibre47"><span>        The number of bits to display is stored in <span class="bold1">numbits</span>.</span></div>
+<div class="calibre47"><span>  <span class="bold1">3.</span>  To actually display the bit pattern, <span class="bold1">ShowBits</span> provides the method <span class="bold1">show( )</span>, which is shown here:</span></div>
+<div class="calibre47"><span>        <img alt="image" src="images/00379.jpg" class="calibre403"/></span></div>
+<div class="calibre47"><span>        Notice that <span class="bold1">show( )</span> specifies one <span class="bold1">long</span> parameter. This does not mean that you always have to pass <span class="bold1">show( )</span> a <span class="bold1">long</span> value, however. Because of Java’s automatic type promotions, any integer type can be passed to <span class="bold1">show( )</span>. The number of bits displayed is determined by the value stored in <span class="bold1">numbits</span>. After each group of 8 bits, <span class="bold1">show( )</span> outputs a space. This makes it easier to read the binary values of long bit patterns.</span></div>
+<div class="calibre47"><span>  <span class="bold1">4.</span>  The <span class="bold1">ShowBitsDemo</span> program is shown here:</span></div>
+<div class="calibre47"><span>        <img alt="image" src="images/00380.jpg" class="calibre404"/></span></div>
+<div class="calibre47"><span>        <img alt="image" src="images/00381.jpg" class="calibre405"/></span></div>
+<div class="calibre47"><span>  <span class="bold1">5.</span>  The output from <span class="bold1">ShowBitsDemo</span> is shown here:</span></div>
+<div class="calibre47"><span>        <img alt="image" src="images/00382.jpg" class="calibre406"/></span></div>
+<div class="calibre36"><span><img alt="image" src="images/00005.jpg" class="calibre34"/></span></div><div class="calibre18"> </div>
+<div id="filepos538777" class="calibre9"><span class="calibre10"><span><span class="bold1">The ? Operator</span></span></span></div>
+<div class="calibre12"><span>One of Java’s most fascinating operators is the <span class="bold1">?</span>. The <span class="bold1">?</span> operator is often used to replace <span class="bold1">if-else</span> statements of this general form:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00383.jpg" class="calibre407"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>Here, the value assigned to <span class="italic">var</span> depends upon the outcome of the condition controlling the <span class="bold1">if</span>.</span></div>
+<div class="calibre23"><span>The <span class="bold1">?</span> is called a <span class="italic">ternary operator</span> because it requires three operands. It takes the general form</span></div>
+<div class="calibre27"><span><span class="italic">Exp1 ? Exp2 : Exp3;</span></span></div>
+<div class="calibre27"><span>where <span class="italic">Exp1</span> is a <span class="bold1">boolean</span> expression, and <span class="italic">Exp2</span> and <span class="italic">Exp3</span> are expressions of any type other than <span class="bold1">void</span>. The type of <span class="italic">Exp2</span> and <span class="italic">Exp3</span> must be the same (or compatible), though. Notice the use and placement of the colon.</span></div>
+<div class="calibre23"><span>The value of a <span class="bold1">?</span> expression is determined like this: <span class="italic">Exp1</span> is evaluated. If it is true, then <span class="italic">Exp2</span> is evaluated and becomes the value of the entire <span class="bold1">?</span> expression. If <span class="italic">Exp1</span> is false, then <span class="italic">Exp3</span> is evaluated and its value becomes the value of the expression. Consider this example, which assigns <span class="bold1">absval</span> the absolute value of <span class="bold1">val</span>:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00384.jpg" class="calibre82"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>Here, <span class="bold1">absval</span> will be assigned the value of <span class="bold1">val</span> if <span class="bold1">val</span> is zero or greater. If <span class="bold1">val</span> is negative, then <span class="bold1">absval</span> will be assigned the negative of that value (which yields a positive value). The same code written using the <span class="bold1">if-else</span> structure would look like this:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00385.jpg" class="calibre408"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>Here is another example of the <span class="bold1">?</span> operator. This program divides two numbers, but will not allow a division by zero.</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00386.jpg" class="calibre409"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>The output from the program is shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00387.jpg" class="calibre410"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>Pay special attention to this line from the program:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00388.jpg" class="calibre411"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>Here, <span class="bold1">result</span> is assigned the outcome of the division of 100 by <span class="bold1">i</span>. However, this division takes place only if <span class="bold1">i</span> is not zero. When <span class="bold1">i</span> is zero, a placeholder value of zero is assigned to <span class="bold1">result</span>.</span></div>
+<div class="calibre23"><span>You don’t actually have to assign the value produced by the <span class="bold1">?</span> to some variable. For example, you could use the value as an argument in a call to a method. Or, if the expressions are all of type <span class="bold1">boolean</span>, the <span class="bold1">?</span> can be used as the conditional expression in a loop or <span class="bold1">if</span> statement. For example, here is the preceding program rewritten a bit more efficiently. It produces the same output as before.</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00389.jpg" class="calibre412"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>Notice the <span class="bold1">if</span> statement. If <span class="bold1">i</span> is zero, then the outcome of the <span class="bold1">if</span> is false, the division by zero is prevented, and no result is displayed. Otherwise, the division takes place.</span></div>
+<div id="filepos543113" class="calibre44"><span class="calibre10"><span><img alt="image" src="images/00059.jpg" class="calibre104"/>   <span class="bold1"><span class="italic">Chapter 5 Self Test</span></span></span></span></div><div class="calibre11"> </div>
+<div class="calibre47"><span>  <span class="bold1"><a id="filepos543393" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1509488">1</a>.</span>  Show two ways to declare a one-dimensional array of 12 <span class="bold1">double</span>s.</span></div>
+<div class="calibre47"><span>  <span class="bold1"><a id="filepos543631" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1509882">2</a>.</span>  Show how to initialize a one-dimensional array of integers to the values 1 through 5.</span></div>
+<div class="calibre47"><span>  <span class="bold1"><a id="filepos543884" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1510291">3</a>.</span>  Write a program that uses an array to find the average of 10 <span class="bold1">double</span> values. Use any 10 values you like.</span></div>
+<div class="calibre47"><span>  <span class="bold1"><a id="filepos544162" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1510728">4</a>.</span>  Change the sort in <a href="#filepos463277">Try This 5-1</a> so that it sorts an array of strings. Demonstrate that it works.</span></div>
+<div class="calibre47"><span>  <span class="bold1"><a id="filepos544453" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1511176">5</a>.</span>  What is the difference between the <span class="bold1">String</span> methods <span class="bold1">indexOf( )</span> and <span class="bold1">lastIndexOf( )</span>?</span></div>
+<div class="calibre47"><span>  <span class="bold1"><a id="filepos544722" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1511674">6</a>.</span>  Since all strings are objects of type <span class="bold1">String</span>, show how you can call the <span class="bold1">length( )</span> and <span class="bold1">charAt( )</span> methods on this string literal: "I like Java".</span></div>
+<div class="calibre47"><span>  <span class="bold1"><a id="filepos545067" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1512515">7</a>.</span>  Expanding on the <span class="bold1">Encode</span> cipher class, modify it so that it uses an eight-character string as the key.</span></div>
+<div class="calibre47"><span>  <span class="bold1"><a id="filepos545343" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1512948">8</a>.</span>  Can the bitwise operators be applied to the <span class="bold1">double</span> type?</span></div>
+<div class="calibre47"><span>  <span class="bold1"><a id="filepos545574" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1513279">9</a>.</span>  Show how this sequence can be rewritten using the <span class="bold1">?</span> operator.</span></div>
+<div class="calibre31"><blockquote class="calibre66"><span><img alt="image" src="images/00390.jpg" class="calibre413"/></span></blockquote></div>
+<div class="calibre47"><span><span class="bold1"><a id="filepos545951" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1513929">10</a>.</span>  In the following fragment, is the <span class="bold1">&amp;</span> a bitwise or logical operator? Why?</span></div>
+<div class="calibre31"><blockquote class="calibre66"><span><img alt="image" src="images/00391.jpg" class="calibre414"/></span></blockquote></div>
+<div class="calibre47"><span><span class="bold1"><a id="filepos546347" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1514495">11</a>.</span>  Is it an error to overrun the end of an array? Is it an error to index an array with a negative value?</span></div>
+<div class="calibre47"><span><span class="bold1"><a id="filepos546603" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1515084">12</a>.</span>  What is the unsigned right-shift operator?</span></div>
+<div class="calibre47"><span><span class="bold1"><a id="filepos546799" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1515434">13</a>.</span>  Rewrite the <span class="bold1">MinMax</span> class shown earlier in this chapter so that it uses a for-each style <span class="bold1">for</span> loop.</span></div>
+<div class="calibre47"><span><span class="bold1"><a id="filepos547064" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1515856">14</a>.</span>  Can the <span class="bold1">for</span> loops that perform sorting in the <span class="bold1">Bubble</span> class shown in <a href="#filepos463277">Try This 5-1</a> be converted into for-each style loops? If not, why not?</span></div>
+<div class="calibre47"><span><span class="bold1"><a id="filepos547396" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1516688">15</a>.</span>  Can a <span class="bold1">String</span> control a <span class="bold1">switch</span> statement?</span></div>  <div class="mbppagebreak" id="calibre_pb_12"></div>
+</body></html>

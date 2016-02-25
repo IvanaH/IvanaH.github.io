@@ -1,0 +1,446 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Java&amp;#8482;: A Beginner&amp;#8217;s Guide Sixth Edition</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="page_styles.css" rel="stylesheet" type="text/css"/>
+</head>
+  <body class="calibre">
+<div id="filepos231144" class="calibre29"><span><img alt="image" src="images/00003.jpg" class="calibre30"/></span></div><div class="calibre11"> </div>
+<div class="calibre31"><span class="calibre2"><span><big class="calibre3"><big class="calibre4"><big class="calibre5"><big class="calibre6"><big class="calibre32"><big class="calibre4">Chapter 2</big></big></big></big></big></big></span></span></div>
+<div class="calibre9"><span class="calibre2"><span>Introducing Data Types and Operators</span></span></div><div class="calibre33"> </div>
+<div class="calibre1"><span class="calibre10"><span><span class="bold1">Key Skills &amp; Concepts</span></span></span></div>
+<div class="calibre26"><span><img alt="image" src="images/00002.jpg" class="calibre25"/>   Know Java’s primitive types</span></div>
+<div class="calibre26"><span><img alt="image" src="images/00002.jpg" class="calibre25"/>   Use literals</span></div>
+<div class="calibre26"><span><img alt="image" src="images/00002.jpg" class="calibre25"/>   Initialize variables</span></div>
+<div class="calibre26"><span><img alt="image" src="images/00002.jpg" class="calibre25"/>   Know the scope rules of variables within a method</span></div>
+<div class="calibre26"><span><img alt="image" src="images/00002.jpg" class="calibre25"/>   Use the arithmetic operators</span></div>
+<div class="calibre26"><span><img alt="image" src="images/00002.jpg" class="calibre25"/>   Use the relational and logical operators</span></div>
+<div class="calibre26"><span><img alt="image" src="images/00002.jpg" class="calibre25"/>   Understand the assignment operators</span></div>
+<div class="calibre26"><span><img alt="image" src="images/00002.jpg" class="calibre25"/>   Use shorthand assignments</span></div>
+<div class="calibre26"><span><img alt="image" src="images/00002.jpg" class="calibre25"/>   Understand type conversion in assignments</span></div>
+<div class="calibre26"><span><img alt="image" src="images/00002.jpg" class="calibre25"/>   Cast incompatible types</span></div>
+<div class="calibre26"><span><img alt="image" src="images/00002.jpg" class="calibre25"/>   Understand type conversion in expressions</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00004.jpg" class="calibre34"/></span></div><div class="calibre18"> </div>
+<div class="calibre12"><span><span class="bold1"><span><span class="calibre2">A</span></span></span>t the foundation of any programming language are its data types and operators, and Java is no exception. These elements define the limits of a language and determine the kind of tasks to which it can be applied. Fortunately, Java supports a rich assortment of both data types and operators, making it suitable for any type of programming.</span></div>
+<div class="calibre23"><span>Data types and operators are a large subject. We will begin here with an examination of Java’s foundational data types and its most commonly used operators. We will also take a closer look at variables and examine the expression.</span></div>
+<div id="filepos234767" class="calibre1"><span class="calibre10"><span><span class="bold1">Why Data Types Are Important</span></span></span></div>
+<div class="calibre12"><span>Data types are especially important in Java because it is a strongly typed language. This means that all operations are type-checked by the compiler for type compatibility. Illegal operations will not be compiled. Thus, strong type checking helps prevent errors and enhances reliability. To enable strong type checking, all variables, expressions, and values have a type. There is no concept of a “type-less” variable, for example. Furthermore, the type of a value determines what operations are allowed on it. An operation allowed on one type might not be allowed on another.</span></div>
+<div id="filepos235551" class="calibre1"><span class="calibre10"><span><span class="bold1">Java’s Primitive Types</span></span></span></div>
+<div class="calibre12"><span>Java contains two general categories of built-in data types: object-oriented and non-object-oriented. Java’s object-oriented types are defined by classes, and a discussion of classes is deferred until later. However, at the core of Java are eight primitive (also called elemental or simple) types of data, which are shown in <a href="#filepos236420">Table 2-1</a>. The term <span class="italic">primitive</span> is used here to indicate that these types are not objects in an object-oriented sense, but rather, normal binary values. These primitive types are not objects because of efficiency concerns. All of Java’s other data types are constructed from these primitive types.</span></div>
+<div class="calibre28">
+<div id="filepos236420" class="calibre44"><span><img alt="image" src="images/00060.jpg" class="calibre102"/></span></div>
+<div class="calibre9"><span><img alt="image" src="images/00057.jpg" class="calibre34"/></span></div>
+<div class="calibre9"><span><span class="bold1">Table 2-1</span>   Java’s Built-in Primitive Data Types</span></div><div class="calibre18"> </div>
+</div>
+<div class="calibre23"><span>Java strictly specifies a range and behavior for each primitive type, which all implementations of the Java Virtual Machine must support. Because of Java’s portability requirement, Java is uncompromising on this account. For example, an <span class="bold1">int</span> is the same in all execution environments. This allows programs to be fully portable. There is no need to rewrite code to fit a specific platform. Although strictly specifying the range of the primitive types may cause a small loss of performance in some environments, it is necessary in order to achieve portability.</span></div>
+<div id="filepos237489" class="calibre1"><span class="calibre10"><span><span class="bold1">Integers</span></span></span></div>
+<div class="calibre12"><span>Java defines four integer types: <span class="bold1">byte</span>, <span class="bold1">short</span>, <span class="bold1">int</span>, and <span class="bold1">long</span>, which are shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00061.jpg" class="calibre105"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>As the table shows, all of the integer types are signed positive and negative values. Java does not support unsigned (positive-only) integers. Many other computer languages support both signed and unsigned integers. However, Java’s designers felt that unsigned integers were unnecessary.</span></div>
+<div class="calibre44"><span class="calibre10"><span><span class="bold1"><span class="italic">NOTE</span></span></span></span></div>
+<div class="calibre9"><span><img alt="image" src="images/00006.jpg" class="calibre45"/></span></div>
+<div class="calibre9"><span>Technically, the Java run-time system can use any size it wants to store a primitive type. However, in all cases, types must act as specified.</span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>The most commonly used integer type is <span class="bold1">int</span>. Variables of type <span class="bold1">int</span> are often employed to control loops, to index arrays, and to perform general-purpose integer math.</span></div>
+<div class="calibre23"><span>When you need an integer that has a range greater than <span class="bold1">int</span>, use <span class="bold1">long</span>. For example, here is a program that computes the number of cubic inches contained in a cube that is one mile by one mile, by one mile:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00062.jpg" class="calibre106"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>Here is the output from the program:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00063.jpg" class="calibre107"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>Clearly, the result could not have been held in an <span class="bold1">int</span> variable.</span></div>
+<div class="calibre23"><span>The smallest integer type is <span class="bold1">byte</span>. Variables of type <span class="bold1">byte</span> are especially useful when working with raw binary data that may not be directly compatible with Java’s other built-in types. The <span class="bold1">short</span> type creates a short integer. Variables of type <span class="bold1">short</span> are appropriate when you don’t need the larger range offered by <span class="bold1">int</span>.</span></div>
+<div class="calibre35"><span><img alt="image" src="images/00005.jpg" class="calibre34"/></span></div>
+<div class="calibre9"><span class="calibre10"><span><span class="bold1">Ask the Expert</span></span></span></div>
+<div class="calibre19"><span><span class="bold1"><span><span class="calibre10">Q</span></span>:   You say that there are four integer types:</span> int, short, long, <span class="bold1">and</span> byte. <span class="bold1">However, I have heard that</span> char <span class="bold1">can also be categorized as an integer type in Java. Can you explain?</span></span></div>
+<div class="calibre19"><span><span class="bold1"><span><span class="calibre10">A</span></span>:</span>   The formal specification for Java defines a type category called integral types, which includes <span class="bold1">byte</span>, <span class="bold1">short</span>, <span class="bold1">int</span>, <span class="bold1">long</span>, and <span class="bold1">char</span>. They are called integral types because they all hold whole-number, binary values. However, the purpose of the first four is to represent numeric integer quantities. The purpose of <span class="bold1">char</span> is to represent characters. Therefore, the principal uses of <span class="bold1">char</span> and the principal uses of the other integral types are fundamentally different. Because of the differences, the <span class="bold1">char</span> type is treated separately in this book.</span></div>
+<div class="calibre36"><span><img alt="image" src="images/00005.jpg" class="calibre34"/></span></div><div class="calibre18"> </div>
+<div id="filepos241692" class="calibre9"><span class="calibre10"><span><span class="bold1">Floating-Point Types</span></span></span></div>
+<div class="calibre12"><span>As explained in <a href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos130552">Chapter 1</a>, the floating-point types can represent numbers that have fractional components. There are two kinds of floating-point types, <span class="bold1">float</span> and <span class="bold1">double</span>, which represent single- and double-precision numbers, respectively. Type <span class="bold1">float</span> is 32 bits wide and type <span class="bold1">double</span> is 64 bits wide.</span></div>
+<div class="calibre23"><span>Of the two, <span class="bold1">double</span> is the most commonly used because all of the math functions in Java’s class library use <span class="bold1">double</span> values. For example, the <span class="bold1">sqrt( )</span> method (which is defined by the standard <span class="bold1">Math</span> class) returns a <span class="bold1">double</span> value that is the square root of its <span class="bold1">double</span> argument. Here, <span class="bold1">sqrt( )</span> is used to compute the length of the hypotenuse, given the lengths of the two opposing sides:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00064.jpg" class="calibre108"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>The output from the program is shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00065.jpg" class="calibre109"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>One other point about the preceding example: As mentioned, <span class="bold1">sqrt( )</span> is a member of the standard <span class="bold1">Math</span> class. Notice how <span class="bold1">sqrt( )</span> is called; it is preceded by the name <span class="bold1">Math</span>. This is similar to the way <span class="bold1">System.out</span> precedes <span class="bold1">println( )</span>. Although not all standard methods are called by specifying their class name first, several are.</span></div>
+<div id="filepos243564" class="calibre1"><span class="calibre10"><span><span class="bold1">Characters</span></span></span></div>
+<div class="calibre12"><span>In Java, characters are not 8-bit quantities like they are in many other computer languages. Instead, Java uses Unicode. Unicode defines a character set that can represent all of the characters found in all human languages. In Java, <span class="bold1">char</span> is an unsigned 16-bit type having a range of 0 to 65,536. The standard 8-bit ASCII character set is a subset of Unicode and ranges from 0 to 127. Thus, the ASCII characters are still valid Java characters.</span></div>
+<div class="calibre23"><span>A character variable can be assigned a value by enclosing the character in single quotes. For example, this assigns the variable <span class="bold1">ch</span> the letter X:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00066.jpg" class="calibre110"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>You can output a <span class="bold1">char</span> value using a <span class="bold1">println( )</span> statement. For example, this line outputs the value in <span class="bold1">ch</span>:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00067.jpg" class="calibre111"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>Since <span class="bold1">char</span> is an unsigned 16-bit type, it is possible to perform various arithmetic manipulations on a <span class="bold1">char</span> variable. For example, consider the following program:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00068.jpg" class="calibre112"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>The output generated by this program is shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00069.jpg" class="calibre113"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>In the program, <span class="bold1">ch</span> is first given the value X. Next, <span class="bold1">ch</span> is incremented. This results in <span class="bold1">ch</span> containing Y, the next character in the ASCII (and Unicode) sequence. Next, <span class="bold1">ch</span> is assigned the value 90, which is the ASCII (and Unicode) value that corresponds to the letter Z. Since the ASCII character set occupies the first 127 values in the Unicode character set, all the “old tricks” that you may have used with characters in other languages will work in Java, too.</span></div>
+<div class="calibre35"><span><img alt="image" src="images/00005.jpg" class="calibre34"/></span></div>
+<div class="calibre9"><span class="calibre10"><span><span class="bold1">Ask the Expert</span></span></span></div>
+<div class="calibre19"><span><span class="bold1"><span><span class="calibre10">Q</span></span>:   Why does Java use Unicode?</span></span></div>
+<div class="calibre19"><span><span class="bold1"><span><span class="calibre10">A</span></span>:</span>   Java was designed for worldwide use. Thus, it needs to use a character set that can represent all the world’s languages. Unicode is the standard character set designed expressly for this purpose. Of course, the use of Unicode is inefficient for languages such as English, German, Spanish, or French, whose characters can be contained within 8 bits. But such is the price that must be paid for global portability.</span></div>
+<div class="calibre36"><span><img alt="image" src="images/00005.jpg" class="calibre34"/></span></div><div class="calibre18"> </div>
+<div id="filepos247231" class="calibre9"><span class="calibre10"><span><span class="bold1">The Boolean Type</span></span></span></div>
+<div class="calibre12"><span>The <span class="bold1">boolean</span> type represents true/false values. Java defines the values true and false using the reserved words <span class="bold1">true</span> and <span class="bold1">false</span>. Thus, a variable or expression of type <span class="bold1">boolean</span> will be one of these two values.</span></div>
+<div class="calibre23"><span>Here is a program that demonstrates the <span class="bold1">boolean</span> type:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00070.jpg" class="calibre114"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>The output generated by this program is shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00071.jpg" class="calibre115"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>There are three interesting things to notice about this program. First, as you can see, when a <span class="bold1">boolean</span> value is output by <span class="bold1">println( )</span>, "true" or "false" is displayed. Second, the value of a <span class="bold1">boolean</span> variable is sufficient, by itself, to control the <span class="bold1">if</span> statement. There is no need to write an <span class="bold1">if</span> statement like this:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00072.jpg" class="calibre116"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>Third, the outcome of a relational operator, such as <span class="bold1">&lt;</span>, is a <span class="bold1">boolean</span> value. This is why the expression <span class="bold1">10 &gt; 9</span> displays the value "true." Further, the extra set of parentheses around <span class="bold1">10 &gt; 9</span> is necessary because the <span class="bold1">+</span> operator has a higher precedence than the <span class="bold1">&gt;</span>.</span></div>
+<div class="calibre18"> </div><table cellspacing="0" cellpadding="0" class="calibre37">
+<colgroup class="calibre38">
+<col class="calibre72"/>
+<col class="calibre73"/>
+</colgroup>
+<tr class="calibre41">
+<td valign="top" id="filepos249325" class="calibre74"><span class="calibre10"><span class="bold1">Try This 2-1</span> </span></td>
+<td valign="top" class="calibre75"><span class="calibre10">How Far Away Is the Lightning?</span></td>
+</tr></table><div class="calibre43"> </div>
+<div class="calibre1"><span><img alt="image" src="images/00073.jpg" class="calibre117"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>In this project, you will create a program that computes how far away, in feet, a listener is from a lightning strike. Sound travels approximately 1,100 feet per second through air. Thus, knowing the interval between the time you see a lightning bolt and the time the sound reaches you enables you to compute the distance to the lightning. For this project, assume that the time interval is 7.2 seconds.</span></div>
+<div class="calibre19"><span>  <span class="bold1">1.</span>  Create a new file called <span class="bold1">Sound.java</span>.</span></div>
+<div class="calibre47"><span>  <span class="bold1">2.</span>  To compute the distance, you will need to use floating-point values. Why? Because the time interval, 7.2, has a fractional component. Although it would be permissible to use a value of type <span class="bold1">float</span>, we will use <span class="bold1">double</span> in the example.</span></div>
+<div class="calibre47"><span>  <span class="bold1">3.</span>  To compute the distance, you will multiply 7.2 by 1,100. You will then assign this value to a variable.</span></div>
+<div class="calibre47"><span>  <span class="bold1">4.</span>  Finally, you will display the result.</span></div>
+<div class="calibre47"><span>        Here is the entire <span class="bold1">Sound.java</span> program listing:</span></div>
+<div class="calibre47"><span>        <img alt="image" src="images/00074.jpg" class="calibre118"/></span></div>
+<div class="calibre47"><span>  <span class="bold1">5.</span>  Compile and run the program. The following result is displayed:</span></div>
+<div class="calibre47"><span>        <img alt="image" src="images/00075.jpg" class="calibre119"/></span></div>
+<div class="calibre47"><span>  <span class="bold1">6.</span>  Extra challenge: You can compute the distance to a large object, such as a rock wall, by timing the echo. For example, if you clap your hands and time how long it takes for you to hear the echo, then you know the total round-trip time. Dividing this value by two yields the time it takes the sound to go one way. You can then use this value to compute the distance to the object. Modify the preceding program so that it computes the distance, assuming that the time interval is that of an echo.</span></div>
+<div class="calibre36"><span><img alt="image" src="images/00005.jpg" class="calibre34"/></span></div><div class="calibre18"> </div>
+<div id="filepos252711" class="calibre9"><span class="calibre10"><span><span class="bold1">Literals</span></span></span></div>
+<div class="calibre12"><span>In Java, <span class="italic">literals</span> refer to fixed values that are represented in their human-readable form. For example, the number 100 is a literal. Literals are also commonly called <span class="italic">constants</span>. For the most part, literals, and their usage, are so intuitive that they have been used in one form or another by all the preceding sample programs. Now the time has come to explain them formally.</span></div>
+<div class="calibre23"><span>Java literals can be of any of the primitive data types. The way each literal is represented depends upon its type. As explained earlier, character constants are enclosed in single quotes. For example, 'a' and ' %' are both character constants.</span></div>
+<div class="calibre23"><span>Integer literals are specified as numbers without fractional components. For example, 10 and –100 are integer literals. Floating-point literals require the use of the decimal point followed by the number’s fractional component. For example, 11.123 is a floating-point literal. Java also allows you to use scientific notation for floating-point numbers.</span></div>
+<div class="calibre23"><span>By default, integer literals are of type <span class="bold1">int</span>. If you want to specify a <span class="bold1">long</span> literal, append an l or an L. For example, 12 is an <span class="bold1">int</span>, but 12L is a <span class="bold1">long</span>.</span></div>
+<div class="calibre23"><span>By default, floating-point literals are of type <span class="bold1">double</span>. To specify a <span class="bold1">float</span> literal, append an F or f to the constant. For example, 10.19F is of type <span class="bold1">float</span>.</span></div>
+<div class="calibre23"><span>Although integer literals create an <span class="bold1">int</span> value by default, they can still be assigned to variables of type <span class="bold1">char</span>, <span class="bold1">byte</span>, or <span class="bold1">short</span> as long as the value being assigned can be represented by the target type. An integer literal can always be assigned to a <span class="bold1">long</span> variable.</span></div>
+<div class="calibre23"><span>Beginning with JDK 7, you can embed one or more underscores into an integer or floating-point literal. Doing so can make it easier to read values consisting of many digits. When the literal is compiled, the underscores are simply discarded. Here is an example:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00076.jpg" class="calibre120"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>This specifies the value 123,451,234. The use of underscores is particularly useful when encoding things like part numbers, customer IDs, and status codes that are commonly thought of as consisting of subgroups of digits.</span></div>
+<div id="filepos255685" class="calibre1"><span class="calibre10"><span><span class="bold1">Hexadecimal, Octal, and Binary Literals</span></span></span></div>
+<div class="calibre12"><span>As you may know, in programming it is sometimes easier to use a number system based on 8 or 16 instead of 10. The number system based on 8 is called <span class="italic">octal</span>, and it uses the digits 0 through 7. In octal the number 10 is the same as 8 in decimal. The base 16 number system is called <span class="italic">hexadecimal</span> and uses the digits 0 through 9 plus the letters A through F, which stand for 10, 11, 12, 13, 14, and 15. For example, the hexadecimal number 10 is 16 in decimal. Because of the frequency with which these two number systems are used, Java allows you to specify integer literals in hexadecimal or octal instead of decimal. A hexadecimal literal must begin with <span class="bold1">0x</span> or <span class="bold1">0X</span> (a zero followed by an x or X). An octal literal begins with a zero. Here are some examples:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00077.jpg" class="calibre121"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>As a point of interest, Java also allows hexadecimal floating-point literals, but they are seldom used.</span></div>
+<div class="calibre23"><span>Beginning with JDK 7, it is possible to specify an integer literal by use of binary. To do so, precede the binary number with a <span class="bold1">0b</span> or <span class="bold1">0B</span>. For example, this specifies the value 12 in binary: <span class="bold1">0b1100</span>.</span></div>
+<div id="filepos257275" class="calibre1"><span class="calibre10"><span><span class="bold1">Character Escape Sequences</span></span></span></div>
+<div class="calibre12"><span>Enclosing character constants in single quotes works for most printing characters, but a few characters, such as the carriage return, pose a special problem when a text editor is used. In addition, certain other characters, such as the single and double quotes, have special meaning in Java, so you cannot use them directly. For these reasons, Java provides special <span class="italic">escape sequences</span>, sometimes referred to as backslash character constants, shown in <a href="#filepos258040">Table 2-2</a>. These sequences are used in place of the characters that they represent.</span></div>
+<div class="calibre28">
+<div id="filepos258040" class="calibre44"><span><img alt="image" src="images/00078.jpg" class="calibre122"/></span></div>
+<div class="calibre9"><span><img alt="image" src="images/00057.jpg" class="calibre34"/></span></div>
+<div class="calibre9"><span><span class="bold1">Table 2-2</span>   Character Escape Sequences</span></div><div class="calibre18"> </div>
+</div>
+<div class="calibre23"><span>For example, this assigns <span class="bold1">ch</span> the tab character:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00079.jpg" class="calibre123"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>The next example assigns a single quote to <span class="bold1">ch</span>:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00080.jpg" class="calibre123"/></span></div><div class="calibre11"> </div>
+<div id="filepos258957" class="calibre1"><span class="calibre10"><span><span class="bold1">String Literals</span></span></span></div>
+<div class="calibre12"><span>Java supports one other type of literal: the string. A <span class="italic">string</span> is a set of characters enclosed by double quotes. For example,</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00081.jpg" class="calibre124"/></span></div><div class="calibre11"> </div>
+<div class="calibre27"><span>is a string. You have seen examples of strings in many of the <span class="bold1">println( )</span> statements in the preceding sample programs.</span></div>
+<div class="calibre23"><span>In addition to normal characters, a string literal can also contain one or more of the escape sequences just described. For example, consider the following program. It uses the <span class="bold1">\n</span> and <span class="bold1">\t</span> escape sequences.</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00082.jpg" class="calibre125"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>The output is shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00083.jpg" class="calibre126"/></span></div><div class="calibre11"> </div>
+<div class="calibre29"><span><img alt="image" src="images/00005.jpg" class="calibre34"/></span></div>
+<div class="calibre9"><span class="calibre10"><span><span class="bold1">Ask the Expert</span></span></span></div>
+<div class="calibre19"><span><span class="bold1"><span><span class="calibre10">Q</span></span>:   Is a string consisting of a single character the same as a character literal? For example, is "k" the same as 'k'?</span></span></div>
+<div class="calibre19"><span><span class="bold1"><span><span class="calibre10">A</span></span>:</span>   No. You must not confuse strings with characters. A character literal represents a single letter of type <span class="bold1">char</span>. A string containing only one letter is still a string. Although strings consist of characters, they are not the same type.</span></div>
+<div class="calibre36"><span><img alt="image" src="images/00005.jpg" class="calibre34"/></span></div><div class="calibre18"> </div>
+<div class="calibre23"><span>Notice how the <span class="bold1">\n</span> escape sequence is used to generate a new line. You don’t need to use multiple <span class="bold1">println( )</span> statements to get multiline output. Just embed <span class="bold1">\n</span> within a longer string at the points where you want the new lines to occur.</span></div>
+<div id="filepos261648" class="calibre1"><span class="calibre10"><span><span class="bold1">A Closer Look at Variables</span></span></span></div>
+<div class="calibre12"><span>Variables were introduced in <a href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos130552">Chapter 1</a>. Here, we will take a closer look at them. As you learned earlier, variables are declared using this form of statement,</span></div>
+<div class="calibre27"><span><span class="italic">type var-name;</span></span></div>
+<div class="calibre27"><span>where <span class="italic">type</span> is the data type of the variable, and <span class="italic">var-name</span> is its name. You can declare a variable of any valid type, including the simple types just described, and every variable will have a type. Thus, the capabilities of a variable are determined by its type. For example, a variable of type <span class="bold1">boolean</span> cannot be used to store floating-point values. Furthermore, the type of a variable cannot change during its lifetime. An <span class="bold1">int</span> variable cannot turn into a <span class="bold1">char</span> variable, for example.</span></div>
+<div class="calibre23"><span>All variables in Java must be declared prior to their use. This is necessary because the compiler must know what type of data a variable contains before it can properly compile any statement that uses the variable. It also enables Java to perform strict type checking.</span></div>
+<div id="filepos263029" class="calibre1"><span class="calibre10"><span><span class="bold1">Initializing a Variable</span></span></span></div>
+<div class="calibre12"><span>In general, you must give a variable a value prior to using it. One way to give a variable a value is through an assignment statement, as you have already seen. Another way is by giving it an initial value when it is declared. To do this, follow the variable’s name with an equal sign and the value being assigned. The general form of initialization is shown here:</span></div>
+<div class="calibre27"><span><span class="italic">type var = value;</span></span></div>
+<div class="calibre27"><span>Here, <span class="italic">value</span> is the value that is given to <span class="italic">var</span> when <span class="italic">var</span> is created. The value must be compatible with the specified type. Here are some examples:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00084.jpg" class="calibre127"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>When declaring two or more variables of the same type using a comma-separated list, you can give one or more of those variables an initial value. For example:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00085.jpg" class="calibre128"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>In this case, only <span class="bold1">b</span> and <span class="bold1">c</span> are initialized.</span></div>
+<div id="filepos264522" class="calibre1"><span class="calibre10"><span><span class="bold1">Dynamic Initialization</span></span></span></div>
+<div class="calibre12"><span>Although the preceding examples have used only constants as initializers, Java allows variables to be initialized dynamically, using any expression valid at the time the variable is declared. For example, here is a short program that computes the volume of a cylinder given the radius of its base and its height:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00086.jpg" class="calibre129"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>Here, three local variables—<span class="bold1">radius</span>, <span class="bold1">height</span>, and <span class="bold1">volume</span>—are declared. The first two, <span class="bold1">radius</span> and <span class="bold1">height</span>, are initialized by constants. However, <span class="bold1">volume</span> is initialized dynamically to the volume of the cylinder. The key point here is that the initialization expression can use any element valid at the time of the initialization, including calls to methods, other variables, or literals.</span></div>
+<div id="filepos265658" class="calibre1"><span class="calibre10"><span><span class="bold1">The Scope and Lifetime of Variables</span></span></span></div>
+<div class="calibre12"><span>So far, all of the variables that we have been using were declared at the start of the <span class="bold1">main( )</span> method. However, Java allows variables to be declared within any block. As explained in <a href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos130552">Chapter 1</a>, a block is begun with an opening curly brace and ended by a closing curly brace. A block defines a <span class="italic">scope</span>. Thus, each time you start a new block, you are creating a new scope. A scope determines what objects are visible to other parts of your program. It also determines the lifetime of those objects.</span></div>
+<div class="calibre23"><span>Some other computer languages define two general categories of scopes: global and local. Although supported by Java, these are not the best ways to categorize Java’s scopes. The most important scopes in Java are those defined by a class and those defined by a method. A discussion of class scope (and variables declared within it) is deferred until later in this book, when classes are described. For now, we will examine only the scopes defined by or within a method.</span></div>
+<div class="calibre23"><span>The scope defined by a method begins with its opening curly brace. However, if that method has parameters, they too are included within the method’s scope.</span></div>
+<div class="calibre23"><span>As a general rule, variables declared inside a scope are not visible (that is, accessible) to code that is defined outside that scope. Thus, when you declare a variable within a scope, you are localizing that variable and protecting it from unauthorized access and/or modification. Indeed, the scope rules provide the foundation for encapsulation.</span></div>
+<div class="calibre23"><span>Scopes can be nested. For example, each time you create a block of code, you are creating a new, nested scope. When this occurs, the outer scope encloses the inner scope. This means that objects declared in the outer scope will be visible to code within the inner scope. However, the reverse is not true. Objects declared within the inner scope will not be visible outside it.</span></div>
+<div class="calibre23"><span>To understand the effect of nested scopes, consider the following program:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00087.jpg" class="calibre130"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>As the comments indicate, the variable <span class="bold1">x</span> is declared at the start of <span class="bold1">main( )</span>’s scope and is accessible to all subsequent code within <span class="bold1">main( )</span>. Within the <span class="bold1">if</span> block, <span class="bold1">y</span> is declared. Since a block defines a scope, <span class="bold1">y</span> is visible only to other code within its block. This is why outside of its block, the line <span class="bold1">y = 100;</span> is commented out. If you remove the leading comment symbol, a compile-time error will occur, because <span class="bold1">y</span> is not visible outside of its block. Within the <span class="bold1">if</span> block, <span class="bold1">x</span> can be used because code within a block (that is, a nested scope) has access to variables declared by an enclosing scope.</span></div>
+<div class="calibre23"><span>Within a block, variables can be declared at any point, but are valid only after they are declared. Thus, if you define a variable at the start of a method, it is available to all of the code within that method. Conversely, if you declare a variable at the end of a block, it is effectively useless, because no code will have access to it.</span></div>
+<div class="calibre23"><span>Here is another important point to remember: variables are created when their scope is entered, and destroyed when their scope is left. This means that a variable will not hold its value once it has gone out of scope. Therefore, variables declared within a method will not hold their values between calls to that method. Also, a variable declared within a block will lose its value when the block is left. Thus, the lifetime of a variable is confined to its scope.</span></div>
+<div class="calibre23"><span>If a variable declaration includes an initializer, that variable will be reinitialized each time the block in which it is declared is entered. For example, consider this program:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00088.jpg" class="calibre131"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>The output generated by this program is shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00089.jpg" class="calibre132"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>As you can see, <span class="bold1">y</span> is always reinitialized to –1 each time the inner <span class="bold1">for</span> loop is entered. Even though it is subsequently assigned the value 100, this value is lost.</span></div>
+<div class="calibre23"><span>There is one quirk to Java’s scope rules that may surprise you: although blocks can be nested, no variable declared within an inner scope can have the same name as a variable declared by an enclosing scope. For example, the following program, which tries to declare two separate variables with the same name, will not compile.</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00090.jpg" class="calibre133"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>If you come from a C/C++ background, you know that there is no restriction on the names that you give variables declared in an inner scope. Thus, in C/C++ the declaration of <span class="bold1">count</span> within the block of the outer <span class="bold1">for</span> loop is completely valid, and such a declaration hides the outer variable. The designers of Java felt that this name hiding could easily lead to programming errors and disallowed it.</span></div>
+<div id="filepos271949" class="calibre1"><span class="calibre10"><span><span class="bold1">Operators</span></span></span></div>
+<div class="calibre12"><span>Java provides a rich operator environment. An <span class="italic">operator</span> is a symbol that tells the compiler to perform a specific mathematical or logical manipulation. Java has four general classes of operators: arithmetic, bitwise, relational, and logical. Java also defines some additional operators that handle certain special situations. This chapter will examine the arithmetic, relational, and logical operators. We will also examine the assignment operator. The bitwise and other special operators are examined later.</span></div>
+<div id="filepos272638" class="calibre1"><span class="calibre10"><span><span class="bold1">Arithmetic Operators</span></span></span></div>
+<div class="calibre12"><span>Java defines the following arithmetic operators:</span></div>
+<div class="calibre11"> </div><table cellpadding="0" cellspacing="3" border="1" class="calibre37">
+<tr class="calibre41">
+<td valign="top" class="calibre83"><span class="bold1">Operator</span>    </td>
+<td valign="top" class="calibre83"><span class="bold1">Meaning</span></td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">+</td>
+<td valign="top" class="calibre42">Addition (also unary plus)</td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">–</td>
+<td valign="top" class="calibre42">Subtraction (also unary minus)</td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">*</td>
+<td valign="top" class="calibre42">Multiplication</td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">/</td>
+<td valign="top" class="calibre42">Division</td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">%</td>
+<td valign="top" class="calibre42">Modulus</td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">++</td>
+<td valign="top" class="calibre42">Increment</td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">– –</td>
+<td valign="top" class="calibre42">Decrement</td></tr></table><div class="calibre43"> </div>
+<div class="calibre23"><span>The operators <span class="bold1">+</span>, <span class="bold1">–</span>, <span class="bold1">*</span>, and <span class="bold1">/</span> all work the same way in Java as they do in any other computer language (or algebra, for that matter). These can be applied to any built-in numeric data type. They can also be used on objects of type <span class="bold1">char</span>.</span></div>
+<div class="calibre23"><span>Although the actions of arithmetic operators are well known to all readers, a few special situations warrant some explanation. First, remember that when <span class="bold1">/</span> is applied to an integer, any remainder will be truncated; for example, 10/3 will equal 3 in integer division. You can obtain the remainder of this division by using the modulus operator <span class="bold1">%</span>. It works in Java the way it does in other languages: it yields the remainder of an integer division. For example, 10 % 3 is 1. In Java, the <span class="bold1">%</span> can be applied to both integer and floating-point types. Thus, 10.0 % 3.0 is also 1. The following program demonstrates the modulus operator.</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00091.jpg" class="calibre134"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>The output from the program is shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00092.jpg" class="calibre135"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>As you can see, the <span class="bold1">%</span> yields a remainder of 1 for both integer and floating-point operations.</span></div>
+<div id="filepos276063" class="calibre1"><span class="calibre10"><span><span class="bold1">Increment and Decrement</span></span></span></div>
+<div class="calibre12"><span>Introduced in <a href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos130552">Chapter 1</a>, the <span class="bold1">++</span> and the <span class="bold1">– –</span> are Java’s increment and decrement operators. As you will see, they have some special properties that make them quite interesting. Let’s begin by reviewing precisely what the increment and decrement operators do.</span></div>
+<div class="calibre23"><span>The increment operator adds 1 to its operand, and the decrement operator subtracts 1. Therefore,</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00093.jpg" class="calibre136"/></span></div><div class="calibre11"> </div>
+<div class="calibre27"><span>is the same as</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00094.jpg" class="calibre137"/></span></div><div class="calibre11"> </div>
+<div class="calibre27"><span>and</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00095.jpg" class="calibre136"/></span></div><div class="calibre11"> </div>
+<div class="calibre27"><span>is the same as</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00096.jpg" class="calibre137"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>Both the increment and decrement operators can either precede (prefix) or follow (postfix) the operand. For example,</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00097.jpg" class="calibre136"/></span></div><div class="calibre11"> </div>
+<div class="calibre27"><span>can be written as</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00098.jpg" class="calibre138"/></span></div><div class="calibre11"> </div>
+<div class="calibre27"><span>or as</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00099.jpg" class="calibre139"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>In the foregoing example, there is no difference whether the increment is applied as a prefix or a postfix. However, when an increment or decrement is used as part of a larger expression, there is an important difference. When an increment or decrement operator precedes its operand, Java will perform the corresponding operation prior to obtaining the operand’s value for use by the rest of the expression. If the operator follows its operand, Java will obtain the operand’s value before incrementing or decrementing it. Consider the following:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00100.jpg" class="calibre140"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>In this case, <span class="bold1">y</span> will be set to 11. However, if the code is written as</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00101.jpg" class="calibre140"/></span></div><div class="calibre11"> </div>
+<div class="calibre27"><span>then <span class="bold1">y</span> will be set to 10. In both cases, <span class="bold1">x</span> is still set to 11; the difference is when it happens. There are significant advantages in being able to control when the increment or decrement operation takes place.</span></div>
+<div id="filepos279560" class="calibre1"><span class="calibre10"><span><span class="bold1">Relational and Logical Operators</span></span></span></div>
+<div class="calibre12"><span>In the terms <span class="italic">relational operator</span> and <span class="italic">logical operator, relational</span> refers to the relationships that values can have with one another, and <span class="italic">logical</span> refers to the ways in which true and false values can be connected together. Since the relational operators produce true or false results, they often work with the logical operators. For this reason they will be discussed together here.</span></div>
+<div class="calibre23"><span>The relational operators are shown here:</span></div>
+<div class="calibre11"> </div><table cellpadding="0" cellspacing="3" border="1" class="calibre37">
+<tr class="calibre41">
+<td valign="top" class="calibre83"><span class="bold1">Operator</span>    </td>
+<td valign="top" class="calibre83"><span class="bold1">Meaning</span></td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">= =</td>
+<td valign="top" class="calibre42">Equal to</td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">!=</td>
+<td valign="top" class="calibre42">Not equal to</td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">&gt;</td>
+<td valign="top" class="calibre42">Greater than</td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">&lt;</td>
+<td valign="top" class="calibre42">Less than</td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">&gt;=</td>
+<td valign="top" class="calibre42">Greater than or equal to</td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">&lt;=</td>
+<td valign="top" class="calibre42">Less than or equal to</td></tr></table><div class="calibre43"> </div>
+<div class="calibre23"><span>The logical operators are shown next:</span></div>
+<div class="calibre11"> </div><table cellpadding="0" cellspacing="3" border="1" class="calibre37">
+<tr class="calibre41">
+<td valign="top" class="calibre83"><span class="bold1">Operator</span>    </td>
+<td valign="top" class="calibre83"><span class="bold1">Meaning</span></td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">&amp;</td>
+<td valign="top" class="calibre42">AND</td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">|</td>
+<td valign="top" class="calibre42">OR</td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">^</td>
+<td valign="top" class="calibre42">XOR (exclusive OR)</td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">||</td>
+<td valign="top" class="calibre42">Short-circuit OR</td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">&amp;&amp;</td>
+<td valign="top" class="calibre42">Short-circuit AND</td>
+</tr>
+<tr class="calibre41">
+<td valign="top" class="calibre42">!</td>
+<td valign="top" class="calibre42">NOT</td></tr></table><div class="calibre43"> </div>
+<div class="calibre23"><span>The outcome of the relational and logical operators is a <span class="bold1">boolean</span> value.</span></div>
+<div class="calibre23"><span>In Java, all objects can be compared for equality or inequality using = = and <span class="bold1">!=</span>. However, the comparison operators, <span class="bold1">&lt;, &gt;</span>, <span class="bold1">&lt;=</span>, or <span class="bold1">&gt;=</span>, can be applied only to those types that support an ordering relationship. Therefore, all of the relational operators can be applied to all numeric types and to type <span class="bold1">char</span>. However, values of type <span class="bold1">boolean</span> can only be compared for equality or inequality, since the <span class="bold1">true</span> and <span class="bold1">false</span> values are not ordered. For example, <span class="bold1">true &gt; false</span> has no meaning in Java.</span></div>
+<div class="calibre23"><span>For the logical operators, the operands must be of type <span class="bold1">boolean</span>, and the result of a logical operation is of type <span class="bold1">boolean</span>. The logical operators, <span class="bold1">&amp;</span>, <span class="bold1">|</span>, <span class="bold1">^</span>, and <span class="bold1">!</span>, support the basic logical operations AND, OR, XOR, and NOT, according to the following truth table:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00102.jpg" class="calibre105"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>As the table shows, the outcome of an exclusive OR operation is true when exactly one and only one operand is true.</span></div>
+<div class="calibre23"><span>Here is a program that demonstrates several of the relational and logical operators:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00103.jpg" class="calibre141"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>The output from the program is shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00104.jpg" class="calibre142"/></span></div><div class="calibre11"> </div>
+<div id="filepos285226" class="calibre1"><span class="calibre10"><span><span class="bold1">Short-Circuit Logical Operators</span></span></span></div>
+<div class="calibre12"><span>Java supplies special <span class="italic">short-circuit</span> versions of its AND and OR logical operators that can be used to produce more efficient code. To understand why, consider the following. In an AND operation, if the first operand is false, the outcome is false no matter what value the second operand has. In an OR operation, if the first operand is true, the outcome of the operation is true no matter what the value of the second operand. Thus, in these two cases there is no need to evaluate the second operand. By not evaluating the second operand, time is saved and more efficient code is produced.</span></div>
+<div class="calibre23"><span>The short-circuit AND operator is <span class="bold1">&amp;&amp;</span>, and the short-circuit OR operator is <span class="bold1">||</span>. Their normal counterparts are <span class="bold1">&amp;</span> and <span class="bold1">|</span>. The only difference between the normal and short-circuit versions is that the normal operands will always evaluate each operand, but short-circuit versions will evaluate the second operand only when necessary.</span></div>
+<div class="calibre23"><span>Here is a program that demonstrates the short-circuit AND operator. The program determines whether the value in <span class="bold1">d</span> is a factor of <span class="bold1">n</span>. It does this by performing a modulus operation. If the remainder of <span class="bold1">n / d</span> is zero, then <span class="bold1">d</span> is a factor. However, since the modulus operation involves a division, the short-circuit form of the AND is used to prevent a divide-by-zero error.</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00105.jpg" class="calibre143"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>To prevent a divide-by-zero, the <span class="bold1">if</span> statement first checks to see if <span class="bold1">d</span> is equal to zero. If it is, the short-circuit AND stops at that point and does not perform the modulus division. Thus, in the first test, <span class="bold1">d</span> is 2 and the modulus operation is performed. The second test fails because <span class="bold1">d</span> is set to zero, and the modulus operation is skipped, avoiding a divide-by-zero error. Finally, the normal AND operator is tried. This causes both operands to be evaluated, which leads to a run-time error when the division by zero occurs.</span></div>
+<div class="calibre23"><span>One last point: The formal specification for Java refers to the short-circuit operators as the <span class="italic">conditional-or</span> and the <span class="italic">conditional-and</span> operators, but the term “short-circuit” is commonly used.</span></div>
+<div id="filepos287995" class="calibre1"><span class="calibre10"><span><span class="bold1">The Assignment Operator</span></span></span></div>
+<div class="calibre12"><span>You have been using the assignment operator since <a href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos130552">Chapter 1</a>. Now it is time to take a formal look at it. The <span class="italic">assignment operator</span> is the single equal sign, <span class="bold1">=</span>. This operator works in Java much as it does in any other computer language. It has this general form:</span></div>
+<div class="calibre27"><span><span class="italic">var = expression;</span></span></div>
+<div class="calibre27"><span>Here, the type of <span class="italic">var</span> must be compatible with the type of <span class="italic">expression</span>.</span></div>
+<div class="calibre23"><span>The assignment operator does have one interesting attribute that you may not be familiar with: it allows you to create a chain of assignments. For example, consider this fragment:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00106.jpg" class="calibre144"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>This fragment sets the variables <span class="bold1">x</span>, <span class="bold1">y</span>, and <span class="bold1">z</span> to 100 using a single statement. This works because the <span class="bold1">=</span> is an operator that yields the value of the right-hand expression. Thus, the value of <span class="bold1">z = 100</span> is 100, which is then assigned to <span class="bold1">y</span>, which in turn is assigned to <span class="bold1">x</span>. Using a “chain of assignment” is an easy way to set a group of variables to a common value.</span></div>
+<div id="filepos289584" class="calibre1"><span class="calibre10"><span><span class="bold1">Shorthand Assignments</span></span></span></div>
+<div class="calibre12"><span>Java provides special <span class="italic">shorthand</span> assignment operators that simplify the coding of certain assignment statements. Let’s begin with an example. The assignment statement shown here</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00107.jpg" class="calibre145"/></span></div><div class="calibre11"> </div>
+<div class="calibre27"><span>can be written, using Java shorthand, as</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00108.jpg" class="calibre146"/></span></div><div class="calibre11"> </div>
+<div class="calibre29"><span><img alt="image" src="images/00005.jpg" class="calibre34"/></span></div>
+<div class="calibre9"><span class="calibre10"><span><span class="bold1">Ask the Expert</span></span></span></div>
+<div class="calibre19"><span><span class="bold1"><span><span class="calibre10">Q</span></span>:   Since the short-circuit operators are, in some cases, more efficient than their normal counterparts, why does Java still offer the normal AND and OR operators?</span></span></div>
+<div class="calibre19"><span><span class="bold1"><span><span class="calibre10">A</span></span>:</span>   In some cases you will want both operands of an AND or OR operation to be evaluated because of the side effects produced. Consider the following:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00109.jpg" class="calibre147"/></span></div>
+<div class="calibre148"><span>As the comments indicate, in the first <span class="bold1">if</span> statement, <span class="bold1">i</span> is incremented whether the <span class="bold1">if</span> succeeds or not. However, when the short-circuit operator is used, the variable <span class="bold1">i</span> is not incremented when the first operand is false. The lesson here is that if your code expects the right-hand operand of an AND or OR operation to be evaluated, you must use Java’s non-short-circuit forms of these operations.</span></div>
+<div class="calibre36"><span><img alt="image" src="images/00005.jpg" class="calibre34"/></span></div><div class="calibre18"> </div>
+<div class="calibre12"><span>The operator pair <span class="bold1">+=</span> tells the compiler to assign to <span class="bold1">x</span> the value of <span class="bold1">x</span> plus 10. Here is another example. The statement</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00110.jpg" class="calibre149"/></span></div><div class="calibre11"> </div>
+<div class="calibre27"><span>is the same as</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00111.jpg" class="calibre69"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>Both statements assign to <span class="bold1">x</span> the value of <span class="bold1">x</span> minus 100.</span></div>
+<div class="calibre23"><span>This shorthand will work for all the binary operators in Java (that is, those that require two operands). The general form of the shorthand is</span></div>
+<div class="calibre27"><span><span class="italic">var op = expression;</span></span></div>
+<div class="calibre27"><span>Thus, the arithmetic and logical shorthand assignment operators are the following:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00112.jpg" class="calibre150"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>Because these operators combine an operation with an assignment, they are formally referred to as <span class="italic">compound assignment</span> operators.</span></div>
+<div class="calibre23"><span>The compound assignment operators provide two benefits. First, they are more compact than their “longhand” equivalents. Second, in some cases, they are more efficient. For these reasons, you will often see the compound assignment operators used in professionally written Java programs.</span></div>
+<div id="filepos293791" class="calibre1"><span class="calibre10"><span><span class="bold1">Type Conversion in Assignments</span></span></span></div>
+<div class="calibre12"><span>In programming, it is common to assign one type of variable to another. For example, you might want to assign an <span class="bold1">int</span> value to a <span class="bold1">float</span> variable, as shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00113.jpg" class="calibre151"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>When compatible types are mixed in an assignment, the value of the right side is automatically converted to the type of the left side. Thus, in the preceding fragment, the value in <span class="bold1">i</span> is converted into a <span class="bold1">float</span> and then assigned to <span class="bold1">f</span>. However, because of Java’s strict type checking, not all types are compatible, and thus, not all type conversions are implicitly allowed. For example, <span class="bold1">boolean</span> and <span class="bold1">int</span> are not compatible.</span></div>
+<div class="calibre23"><span>When one type of data is assigned to another type of variable, an <span class="italic">automatic type conversion</span> will take place if</span></div>
+<div class="calibre24"><span><img alt="image" src="images/00002.jpg" class="calibre25"/>   The two types are compatible.</span></div>
+<div class="calibre26"><span><img alt="image" src="images/00002.jpg" class="calibre25"/>   The destination type is larger than the source type.</span></div>
+<div class="calibre27"><span>When these two conditions are met, a <span class="italic">widening conversion</span> takes place. For example, the <span class="bold1">int</span> type is always large enough to hold all valid <span class="bold1">byte</span> values, and both <span class="bold1">int</span> and <span class="bold1">byte</span> are integer types, so an automatic conversion from <span class="bold1">byte</span> to <span class="bold1">int</span> can be applied.</span></div>
+<div class="calibre23"><span>For widening conversions, the numeric types, including integer and floating-point types, are compatible with each other. For example, the following program is perfectly valid since <span class="bold1">long</span> to <span class="bold1">double</span> is a widening conversion that is automatically performed.</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00114.jpg" class="calibre152"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>Although there is an automatic conversion from <span class="bold1">long</span> to <span class="bold1">double</span>, there is no automatic conversion from <span class="bold1">double</span> to <span class="bold1">long</span>, since this is not a widening conversion. Thus, the following version of the preceding program is invalid.</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00115.jpg" class="calibre87"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>There are no automatic conversions from the numeric types to <span class="bold1">char</span> or <span class="bold1">boolean</span>. Also, <span class="bold1">char</span> and <span class="bold1">boolean</span> are not compatible with each other. However, an integer literal can be assigned to <span class="bold1">char</span>.</span></div>
+<div id="filepos297017" class="calibre1"><span class="calibre10"><span><span class="bold1">Casting Incompatible Types</span></span></span></div>
+<div class="calibre12"><span>Although the automatic type conversions are helpful, they will not fulfill all programming needs because they apply only to widening conversions between compatible types. For all other cases you must employ a cast. A cast is an instruction to the compiler to convert one type into another. Thus, it requests an explicit type conversion. A cast has this general form:</span></div>
+<div class="calibre27"><span><span class="italic">(target-type) expression</span></span></div>
+<div class="calibre27"><span>Here, <span class="italic">target-type</span> specifies the desired type to convert the specified expression to. For example, if you want to convert the type of the expression <span class="bold1">x/y</span> to <span class="bold1">int</span>, you can write</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00116.jpg" class="calibre153"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>Here, even though <span class="bold1">x</span> and <span class="bold1">y</span> are of type <span class="bold1">double</span>, the cast converts the outcome of the expression to <span class="bold1">int</span>. The parentheses surrounding <span class="bold1">x / y</span> are necessary. Otherwise, the cast to <span class="bold1">int</span> would apply only to the <span class="bold1">x</span> and not to the outcome of the division. The cast is necessary here because there is no automatic conversion from <span class="bold1">double</span> to <span class="bold1">int</span>.</span></div>
+<div class="calibre23"><span>When a cast involves a <span class="italic">narrowing conversion</span>, information might be lost. For example, when casting a <span class="bold1">long</span> into a <span class="bold1">short</span>, information will be lost if the <span class="bold1">long</span>’s value is greater than the range of a <span class="bold1">short</span> because its high-order bits are removed. When a floating-point value is cast to an integer type, the fractional component will also be lost due to truncation. For example, if the value 1.23 is assigned to an integer, the resulting value will simply be 1. The 0.23 is lost.</span></div>
+<div class="calibre23"><span>The following program demonstrates some type conversions that require casts:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00117.jpg" class="calibre154"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>The output from the program is shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00118.jpg" class="calibre155"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>In the program, the cast of <span class="bold1">(x / y)</span> to <span class="bold1">int</span> results in the truncation of the fractional component, and information is lost. Next, no loss of information occurs when <span class="bold1">b</span> is assigned the value 100 because a <span class="bold1">byte</span> can hold the value 100. However, when the attempt is made to assign <span class="bold1">b</span> the value 257, information loss occurs because 257 exceeds a <span class="bold1">byte</span>’s maximum value. Finally, no information is lost, but a cast is needed when assigning a <span class="bold1">byte</span> value to a <span class="bold1">char</span>.</span></div>
+<div id="filepos300227" class="calibre1"><span class="calibre10"><span><span class="bold1">Operator Precedence</span></span></span></div>
+<div class="calibre12"><span><a href="#filepos300772">Table 2-3</a> shows the order of precedence for all Java operators, from highest to lowest. This table includes several operators that will be discussed later in this book. Although technically separators, the <span class="bold1">[]</span>, <span class="bold1">()</span>, and <span class="bold1">.</span> can also act like operators. In that capacity, they would have the highest precedence.</span></div>
+<div class="calibre28">
+<div id="filepos300772" class="calibre44"><span><img alt="image" src="images/00119.jpg" class="calibre156"/></span></div>
+<div class="calibre9"><span><img alt="image" src="images/00057.jpg" class="calibre34"/></span></div>
+<div class="calibre9"><span><span class="bold1">Table 2-3</span>   The Precedence of the Java Operators</span></div><div class="calibre18"> </div>
+</div>
+<table cellspacing="0" cellpadding="0" class="calibre37">
+<colgroup class="calibre38">
+<col class="calibre72"/>
+<col class="calibre73"/>
+</colgroup>
+<tr class="calibre41">
+<td valign="top" id="filepos301355" class="calibre74"><span class="calibre10"><span class="bold1">Try This 2-2</span> </span></td>
+<td valign="top" class="calibre75"><span class="calibre10">Display a Truth Table for the Logical Operators</span></td>
+</tr></table><div class="calibre43"> </div>
+<div class="calibre1"><span><img alt="image" src="images/00120.jpg" class="calibre157"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>In this project, you will create a program that displays the truth table for Java’s logical operators. You must make the columns in the table line up. This project makes use of several features covered in this chapter, including one of Java’s escape sequences and the logical operators. It also illustrates the differences in the precedence between the arithmetic <span class="bold1">+</span> operator and the logical operators.</span></div>
+<div class="calibre19"><span>  <span class="bold1">1.</span>  Create a new file called <span class="bold1">LogicalOpTable.java</span>.</span></div>
+<div class="calibre47"><span>  <span class="bold1">2.</span>  To ensure that the columns line up, you will use the <span class="bold1">\t</span> escape sequence to embed tabs into each output string. For example, this <span class="bold1">println( )</span> statement displays the header for the table:</span></div>
+<div class="calibre47"><span>        <img alt="image" src="images/00121.jpg" class="calibre158"/></span></div>
+<div class="calibre47"><span>  <span class="bold1">3.</span>  Each subsequent line in the table will use tabs to position the outcome of each operation under its proper heading.</span></div>
+<div class="calibre47"><span>  <span class="bold1">4.</span>  Here is the entire <span class="bold1">LogicalOpTable.java</span> program listing. Enter it at this time.</span></div>
+<div class="calibre47"><span>        <img alt="image" src="images/00122.jpg" class="calibre159"/></span></div>
+<div class="calibre47"><span>        Notice the parentheses surrounding the logical operations inside the <span class="bold1">println( )</span> statements. They are necessary because of the precedence of Java’s operators. The <span class="bold1">+</span> operator is higher than the logical operators.</span></div>
+<div class="calibre47"><span>  <span class="bold1">5.</span>  Compile and run the program. The following table is displayed.</span></div>
+<div class="calibre47"><span>        <img alt="image" src="images/00123.jpg" class="calibre160"/></span></div>
+<div class="calibre47"><span>  <span class="bold1">6.</span>  On your own, try modifying the program so that it uses and displays 1’s and 0’s, rather than true and false. This may involve a bit more effort than you might at first think!</span></div>
+<div class="calibre36"><span><img alt="image" src="images/00005.jpg" class="calibre34"/></span></div><div class="calibre18"> </div>
+<div id="filepos304879" class="calibre9"><span class="calibre10"><span><span class="bold1">Expressions</span></span></span></div>
+<div class="calibre12"><span>Operators, variables, and literals are constituents of <span class="italic">expressions</span>. You probably already know the general form of an expression from your other programming experience, or from algebra. However, a few aspects of expressions will be discussed now.</span></div>
+<div id="filepos305308" class="calibre1"><span class="calibre10"><span><span class="bold1">Type Conversion in Expressions</span></span></span></div>
+<div class="calibre12"><span>Within an expression, it is possible to mix two or more different types of data as long as they are compatible with each other. For example, you can mix <span class="bold1">short</span> and <span class="bold1">long</span> within an expression because they are both numeric types. When different types of data are mixed within an expression, they are all converted to the same type. This is accomplished through the use of Java’s <span class="italic">type promotion rules</span>.</span></div>
+<div class="calibre23"><span>First, all <span class="bold1">char</span>, <span class="bold1">byte</span>, and <span class="bold1">short</span> values are promoted to <span class="bold1">int</span>. Then, if one operand is a <span class="bold1">long</span>, the whole expression is promoted to <span class="bold1">long</span>. If one operand is a <span class="bold1">float</span> operand, the entire expression is promoted to <span class="bold1">float</span>. If any of the operands is <span class="bold1">double</span>, the result is <span class="bold1">double</span>.</span></div>
+<div class="calibre23"><span>It is important to understand that type promotions apply only to the values operated upon when an expression is evaluated. For example, if the value of a <span class="bold1">byte</span> variable is promoted to <span class="bold1">int</span> inside an expression, outside the expression, the variable is still a <span class="bold1">byte</span>. Type promotion only affects the evaluation of an expression.</span></div>
+<div class="calibre23"><span>Type promotion can, however, lead to somewhat unexpected results. For example, when an arithmetic operation involves two <span class="bold1">byte</span> values, the following sequence occurs: First, the <span class="bold1">byte</span> operands are promoted to <span class="bold1">int</span>. Then the operation takes place, yielding an <span class="bold1">int</span> result. Thus, the outcome of an operation involving two <span class="bold1">byte</span> values will be an <span class="bold1">int</span>. This is not what you might intuitively expect. Consider the following program:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00124.jpg" class="calibre161"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>Somewhat counterintuitively, no cast is needed when assigning <span class="bold1">b*b</span> to <span class="bold1">i</span>, because <span class="bold1">b</span> is promoted to <span class="bold1">int</span> when the expression is evaluated. However, when you try to assign <span class="bold1">b * b</span> to <span class="bold1">b</span>, you do need a cast—back to <span class="bold1">byte</span>! Keep this in mind if you get unexpected type-incompatibility error messages on expressions that would otherwise seem perfectly OK.</span></div>
+<div class="calibre23"><span>This same sort of situation also occurs when performing operations on <span class="bold1">char</span>s. For example, in the following fragment, the cast back to <span class="bold1">char</span> is needed because of the promotion of <span class="bold1">ch1</span> and <span class="bold1">ch2</span> to <span class="bold1">int</span> within the expression:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00125.jpg" class="calibre162"/></span></div><div class="calibre11"> </div>
+<div class="calibre12"><span>Without the cast, the result of adding <span class="bold1">ch1</span> to <span class="bold1">ch2</span> would be <span class="bold1">int</span>, which can’t be assigned to a <span class="bold1">char</span>.</span></div>
+<div class="calibre23"><span>Casts are not only useful when converting between types in an assignment. For example, consider the following program. It uses a cast to <span class="bold1">double</span> to obtain a fractional component from an otherwise integer division.</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00126.jpg" class="calibre163"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>The output from the program is shown here:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00127.jpg" class="calibre164"/></span></div><div class="calibre11"> </div>
+<div id="filepos309239" class="calibre1"><span class="calibre10"><span><span class="bold1">Spacing and Parentheses</span></span></span></div>
+<div class="calibre12"><span>An expression in Java may have tabs and spaces in it to make it more readable. For example, the following two expressions are the same, but the second is easier to read:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00128.jpg" class="calibre165"/></span></div><div class="calibre11"> </div>
+<div class="calibre23"><span>Parentheses increase the precedence of the operations contained within them, just like in algebra. Use of redundant or additional parentheses will not cause errors or slow down the execution of the expression. You are encouraged to use parentheses to make clear the exact order of evaluation, both for yourself and for others who may have to figure out your program later. For example, which of the following two expressions is easier to read?</span></div>
+<div class="calibre1"><span><img alt="image" src="images/00129.jpg" class="calibre166"/></span></div><div class="calibre11"> </div>
+<div id="filepos310382" class="calibre44"><span class="calibre10"><span><img alt="image" src="images/00059.jpg" class="calibre104"/>   <span class="bold1"><span class="italic">Chapter 2 Self Test</span></span></span></span></div><div class="calibre11"> </div>
+<div class="calibre47"><span>  <span class="bold1"><a id="filepos310662" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1491942">1</a>.</span>  Why does Java strictly specify the range and behavior of its primitive types?</span></div>
+<div class="calibre47"><span>  <span class="bold1"><a id="filepos310907" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1492393">2</a>.</span>  What is Java’s character type, and how does it differ from the character type used by some other programming languages?</span></div>
+<div class="calibre47"><span>  <span class="bold1"><a id="filepos311201" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1492923">3</a>.</span>  A <span class="bold1">boolean</span> value can have any value you like because any non-zero value is true. True or False?</span></div>
+<div class="calibre47"><span>  <span class="bold1"><a id="filepos311470" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1493355">4</a>.</span>  Given this output,</span></div>
+<div class="calibre31"><blockquote class="calibre66"><span><img alt="image" src="images/00130.jpg" class="calibre167"/></span></blockquote></div>
+<div class="calibre21"><span>        using a single string, show the <span class="bold1">println( )</span> statement that produced it.</span></div>
+<div class="calibre47"><span>  <span class="bold1"><a id="filepos312041" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1494028">5</a>.</span>  What is wrong with this fragment?</span></div>
+<div class="calibre31"><blockquote class="calibre66"><span><img alt="image" src="images/00131.jpg" class="calibre168"/></span></blockquote></div>
+<div class="calibre47"><span>  <span class="bold1"><a id="filepos312400" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1494938">6</a>.</span>  Explain the difference between the prefix and postfix forms of the increment operator.</span></div>
+<div class="calibre47"><span>  <span class="bold1"><a id="filepos312654" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1495562">7</a>.</span>  Show how a short-circuit AND can be used to prevent a divide-by-zero error.</span></div>
+<div class="calibre47"><span>  <span class="bold1"><a id="filepos312897" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1495961">8</a>.</span>  In an expression, what type are <span class="bold1">byte</span> and <span class="bold1">short</span> promoted to?</span></div>
+<div class="calibre47"><span>  <span class="bold1"><a id="filepos313138" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1496373">9</a>.</span>  In general, when is a cast needed?</span></div>
+<div class="calibre47"><span><span class="bold1"><a id="filepos313324" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1496760">10</a>.</span>  Write a program that finds all of the prime numbers between 2 and 100.</span></div>
+<div class="calibre47"><span><span class="bold1"><a id="filepos313548" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1497141">11</a>.</span>  Does the use of redundant parentheses affect program performance?</span></div>
+<div class="calibre47"><span><span class="bold1"><a id="filepos313767" href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1497460">12</a>.</span>  Does a block define a scope?</span></div>  <div class="mbppagebreak" id="calibre_pb_9"></div>
+</body></html>

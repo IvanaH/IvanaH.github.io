@@ -1,0 +1,2673 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="eng">
+  <head>
+    <meta content="d6622c6e-36c5-4156-8b3a-6f3809639af4" name="dtb:uid"/>
+    <meta content="2" name="dtb:depth"/>
+    <meta content="calibre (1.40.0)" name="dtb:generator"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>Java: A Beginner's Guide, Sixth Edition: A Beginner's Guide</text>
+  </docTitle>
+  <navMap>
+    <navPoint class="chapter" id="num_1" playOrder="1">
+      <navLabel>
+        <text>INTRODUCTION</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_006.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_2" playOrder="2">
+      <navLabel>
+        <text>1   Java Fundamentals</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_3" playOrder="3">
+      <navLabel>
+        <text>The Origins of Java</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos135523"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_4" playOrder="4">
+      <navLabel>
+        <text>How Java Relates to C and C++</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos139480"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_5" playOrder="5">
+      <navLabel>
+        <text>How Java Relates to C#</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos142516"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_6" playOrder="6">
+      <navLabel>
+        <text>Java’s Contribution to the Internet</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos143685"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_7" playOrder="7">
+      <navLabel>
+        <text>Java Applets</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos144359"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_8" playOrder="8">
+      <navLabel>
+        <text>Security</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos146491"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_9" playOrder="9">
+      <navLabel>
+        <text>Portability</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos147833"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_10" playOrder="10">
+      <navLabel>
+        <text>Java’s Magic: The Bytecode</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos148827"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_11" playOrder="11">
+      <navLabel>
+        <text>The Java Buzzwords</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos154118"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_12" playOrder="12">
+      <navLabel>
+        <text>Object-Oriented Programming</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos159018"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_13" playOrder="13">
+      <navLabel>
+        <text>Encapsulation</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos163069"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_14" playOrder="14">
+      <navLabel>
+        <text>Polymorphism</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos165449"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_15" playOrder="15">
+      <navLabel>
+        <text>Inheritance</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos167736"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_16" playOrder="16">
+      <navLabel>
+        <text>Obtaining the Java Development Kit</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos169376"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_17" playOrder="17">
+      <navLabel>
+        <text>A First Simple Program</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos173787"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_18" playOrder="18">
+      <navLabel>
+        <text>Entering the Program</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos174735"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_19" playOrder="19">
+      <navLabel>
+        <text>Compiling the Program</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos176913"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_20" playOrder="20">
+      <navLabel>
+        <text>The First Sample Program Line by Line</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos180240"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_21" playOrder="21">
+      <navLabel>
+        <text>Handling Syntax Errors</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos189392"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_22" playOrder="22">
+      <navLabel>
+        <text>A Second Simple Program</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos191225"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_23" playOrder="23">
+      <navLabel>
+        <text>Another Data Type</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos198244"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_24" playOrder="24">
+      <navLabel>
+        <text>Try This 1-1: Converting Gallons to Liters</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos202330"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_25" playOrder="25">
+      <navLabel>
+        <text>Two Control Statements</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos205692"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_26" playOrder="26">
+      <navLabel>
+        <text>The if Statement</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos206229"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_27" playOrder="27">
+      <navLabel>
+        <text>The for Loop</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos210432"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_28" playOrder="28">
+      <navLabel>
+        <text>Create Blocks of Code</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos214014"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_29" playOrder="29">
+      <navLabel>
+        <text>Semicolons and Positioning</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos217543"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_30" playOrder="30">
+      <navLabel>
+        <text>Indentation Practices</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos219514"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_31" playOrder="31">
+      <navLabel>
+        <text>Try This 1-2: Improving the Gallons-to-Liters Converter</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos220474"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_32" playOrder="32">
+      <navLabel>
+        <text>The Java Keywords</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos223248"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_33" playOrder="33">
+      <navLabel>
+        <text>Identifiers in Java</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos224757"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_34" playOrder="34">
+      <navLabel>
+        <text>The Java Class Libraries</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos226200"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_35" playOrder="35">
+      <navLabel>
+        <text>Chapter 1 Self Test</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos227425"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_36" playOrder="36">
+      <navLabel>
+        <text>2   Introducing Data Types and Operators</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_37" playOrder="37">
+      <navLabel>
+        <text>Why Data Types Are Important</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos234767"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_38" playOrder="38">
+      <navLabel>
+        <text>Java’s Primitive Types</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos235551"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_39" playOrder="39">
+      <navLabel>
+        <text>Integers</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos237489"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_40" playOrder="40">
+      <navLabel>
+        <text>Floating-Point Types</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos241692"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_41" playOrder="41">
+      <navLabel>
+        <text>Characters</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos243564"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_42" playOrder="42">
+      <navLabel>
+        <text>The Boolean Type</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos247231"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_43" playOrder="43">
+      <navLabel>
+        <text>Try This 2-1: How Far Away Is the Lightning?</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos249325"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_44" playOrder="44">
+      <navLabel>
+        <text>Literals</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos252711"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_45" playOrder="45">
+      <navLabel>
+        <text>Hexadecimal, Octal, and Binary Literals</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos255685"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_46" playOrder="46">
+      <navLabel>
+        <text>Character Escape Sequences</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos257275"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_47" playOrder="47">
+      <navLabel>
+        <text>String Literals</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos258957"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_48" playOrder="48">
+      <navLabel>
+        <text>A Closer Look at Variables</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos261648"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_49" playOrder="49">
+      <navLabel>
+        <text>Initializing a Variable</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos263029"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_50" playOrder="50">
+      <navLabel>
+        <text>Dynamic Initialization</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos264522"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_51" playOrder="51">
+      <navLabel>
+        <text>The Scope and Lifetime of Variables</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos265658"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_52" playOrder="52">
+      <navLabel>
+        <text>Operators</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos271949"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_53" playOrder="53">
+      <navLabel>
+        <text>Arithmetic Operators</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos272638"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_54" playOrder="54">
+      <navLabel>
+        <text>Increment and Decrement</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos276063"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_55" playOrder="55">
+      <navLabel>
+        <text>Relational and Logical Operators</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos279560"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_56" playOrder="56">
+      <navLabel>
+        <text>Short-Circuit Logical Operators</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos285226"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_57" playOrder="57">
+      <navLabel>
+        <text>The Assignment Operator</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos287995"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_58" playOrder="58">
+      <navLabel>
+        <text>Shorthand Assignments</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos289584"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_59" playOrder="59">
+      <navLabel>
+        <text>Type Conversion in Assignments</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos293791"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_60" playOrder="60">
+      <navLabel>
+        <text>Casting Incompatible Types</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos297017"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_61" playOrder="61">
+      <navLabel>
+        <text>Operator Precedence</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos300227"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_62" playOrder="62">
+      <navLabel>
+        <text>Try This 2-2: Display a Truth Table for the Logical Operators</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos301355"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_63" playOrder="63">
+      <navLabel>
+        <text>Expressions</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos304879"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_64" playOrder="64">
+      <navLabel>
+        <text>Type Conversion in Expressions</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos305308"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_65" playOrder="65">
+      <navLabel>
+        <text>Spacing and Parentheses</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos309239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_66" playOrder="66">
+      <navLabel>
+        <text>Chapter 2 Self Test</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_009.html#filepos310382"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_67" playOrder="67">
+      <navLabel>
+        <text>3   Program Control Statements</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_68" playOrder="68">
+      <navLabel>
+        <text>Input Characters from the Keyboard</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html#filepos317412"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_69" playOrder="69">
+      <navLabel>
+        <text>The if Statement</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html#filepos320948"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_70" playOrder="70">
+      <navLabel>
+        <text>Nested ifs</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html#filepos323602"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_71" playOrder="71">
+      <navLabel>
+        <text>The if-else-if Ladder</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html#filepos325376"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_72" playOrder="72">
+      <navLabel>
+        <text>The switch Statement</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html#filepos327106"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_73" playOrder="73">
+      <navLabel>
+        <text>Nested switch Statements</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html#filepos332425"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_74" playOrder="74">
+      <navLabel>
+        <text>Try This 3-1: Start Building a Java Help System</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html#filepos333240"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_75" playOrder="75">
+      <navLabel>
+        <text>The for Loop</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html#filepos337268"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_76" playOrder="76">
+      <navLabel>
+        <text>Some Variations on the for Loop</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html#filepos342435"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_77" playOrder="77">
+      <navLabel>
+        <text>Missing Pieces</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html#filepos344198"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_78" playOrder="78">
+      <navLabel>
+        <text>The Infinite Loop</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html#filepos346143"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_79" playOrder="79">
+      <navLabel>
+        <text>Loops with No Body</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html#filepos347133"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_80" playOrder="80">
+      <navLabel>
+        <text>Declaring Loop Control Variables Inside the for Loop</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html#filepos348876"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_81" playOrder="81">
+      <navLabel>
+        <text>The Enhanced for Loop</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html#filepos350452"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_82" playOrder="82">
+      <navLabel>
+        <text>The while Loop</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html#filepos351004"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_83" playOrder="83">
+      <navLabel>
+        <text>The do-while Loop</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html#filepos354488"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_84" playOrder="84">
+      <navLabel>
+        <text>Try This 3-2: Improve the Java Help System</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html#filepos358176"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_85" playOrder="85">
+      <navLabel>
+        <text>Use break to Exit a Loop</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html#filepos361566"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_86" playOrder="86">
+      <navLabel>
+        <text>Use break as a Form of goto</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html#filepos364420"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_87" playOrder="87">
+      <navLabel>
+        <text>Use continue</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html#filepos371847"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_88" playOrder="88">
+      <navLabel>
+        <text>Try This 3-3: Finish the Java Help System</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html#filepos374608"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_89" playOrder="89">
+      <navLabel>
+        <text>Nested Loops</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html#filepos378409"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_90" playOrder="90">
+      <navLabel>
+        <text>Chapter 3 Self Test</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_010.html#filepos379798"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_91" playOrder="91">
+      <navLabel>
+        <text>4   Introducing Classes, Objects, and Methods</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_011.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_92" playOrder="92">
+      <navLabel>
+        <text>Class Fundamentals</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_011.html#filepos388234"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_93" playOrder="93">
+      <navLabel>
+        <text>The General Form of a Class</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_011.html#filepos389636"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_94" playOrder="94">
+      <navLabel>
+        <text>Defining a Class</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_011.html#filepos391498"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_95" playOrder="95">
+      <navLabel>
+        <text>How Objects Are Created</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_011.html#filepos397501"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_96" playOrder="96">
+      <navLabel>
+        <text>Reference Variables and Assignment</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_011.html#filepos399563"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_97" playOrder="97">
+      <navLabel>
+        <text>Methods</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_011.html#filepos402086"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_98" playOrder="98">
+      <navLabel>
+        <text>Adding a Method to the Vehicle Class</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_011.html#filepos404607"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_99" playOrder="99">
+      <navLabel>
+        <text>Returning from a Method</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_011.html#filepos409714"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_100" playOrder="100">
+      <navLabel>
+        <text>Returning a Value</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_011.html#filepos411954"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_101" playOrder="101">
+      <navLabel>
+        <text>Using Parameters</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_011.html#filepos416266"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_102" playOrder="102">
+      <navLabel>
+        <text>Adding a Parameterized Method to Vehicle</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_011.html#filepos419461"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_103" playOrder="103">
+      <navLabel>
+        <text>Try This 4-1: Creating a Help Class</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_011.html#filepos421161"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_104" playOrder="104">
+      <navLabel>
+        <text>Constructors</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_011.html#filepos427794"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_105" playOrder="105">
+      <navLabel>
+        <text>Parameterized Constructors</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_011.html#filepos430767"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_106" playOrder="106">
+      <navLabel>
+        <text>Adding a Constructor to the Vehicle Class</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_011.html#filepos432300"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_107" playOrder="107">
+      <navLabel>
+        <text>The new Operator Revisited</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_011.html#filepos433708"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_108" playOrder="108">
+      <navLabel>
+        <text>Garbage Collection</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_011.html#filepos435366"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_109" playOrder="109">
+      <navLabel>
+        <text>The finalize( ) Method</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_011.html#filepos438458"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_110" playOrder="110">
+      <navLabel>
+        <text>Try This 4-2: Demonstrate Garbage Collection and Finalization</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_011.html#filepos442054"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_111" playOrder="111">
+      <navLabel>
+        <text>The this Keyword</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_011.html#filepos446030"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_112" playOrder="112">
+      <navLabel>
+        <text>Chapter 4 Self Test</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_011.html#filepos449254"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_113" playOrder="113">
+      <navLabel>
+        <text>5   More Data Types and Operators</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_114" playOrder="114">
+      <navLabel>
+        <text>Arrays</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos455385"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_115" playOrder="115">
+      <navLabel>
+        <text>One-Dimensional Arrays</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos456942"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_116" playOrder="116">
+      <navLabel>
+        <text>Try This 5-1: Sorting an Array</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos463277"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_117" playOrder="117">
+      <navLabel>
+        <text>Multidimensional Arrays</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos467520"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_118" playOrder="118">
+      <navLabel>
+        <text>Two-Dimensional Arrays</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos467931"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_119" playOrder="119">
+      <navLabel>
+        <text>Irregular Arrays</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos469915"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_120" playOrder="120">
+      <navLabel>
+        <text>Arrays of Three or More Dimensions</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos472132"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_121" playOrder="121">
+      <navLabel>
+        <text>Initializing Multidimensional Arrays</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos472914"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_122" playOrder="122">
+      <navLabel>
+        <text>Alternative Array Declaration Syntax</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos474440"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_123" playOrder="123">
+      <navLabel>
+        <text>Assigning Array References</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos476592"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_124" playOrder="124">
+      <navLabel>
+        <text>Using the length Member</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos477663"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_125" playOrder="125">
+      <navLabel>
+        <text>Try This 5-2: A Queue Class</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos481142"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_126" playOrder="126">
+      <navLabel>
+        <text>The For-Each Style for Loop</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos489092"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_127" playOrder="127">
+      <navLabel>
+        <text>Iterating Over Multidimensional Arrays</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos497298"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_128" playOrder="128">
+      <navLabel>
+        <text>Applying the Enhanced for</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos499526"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_129" playOrder="129">
+      <navLabel>
+        <text>Strings</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos500973"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_130" playOrder="130">
+      <navLabel>
+        <text>Constructing Strings</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos502410"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_131" playOrder="131">
+      <navLabel>
+        <text>Operating on Strings</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos504549"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_132" playOrder="132">
+      <navLabel>
+        <text>Arrays of Strings</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos508658"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_133" playOrder="133">
+      <navLabel>
+        <text>Strings Are Immutable</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos509299"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_134" playOrder="134">
+      <navLabel>
+        <text>Using a String to Control a switch Statement</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos513230"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_135" playOrder="135">
+      <navLabel>
+        <text>Using Command-Line Arguments</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos515614"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_136" playOrder="136">
+      <navLabel>
+        <text>The Bitwise Operators</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos517953"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_137" playOrder="137">
+      <navLabel>
+        <text>The Bitwise AND, OR, XOR, and NOT Operators</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos519405"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_138" playOrder="138">
+      <navLabel>
+        <text>The Shift Operators</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos527603"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_139" playOrder="139">
+      <navLabel>
+        <text>Bitwise Shorthand Assignments</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos532844"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_140" playOrder="140">
+      <navLabel>
+        <text>Try This 5-3: A ShowBits Class</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos534542"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_141" playOrder="141">
+      <navLabel>
+        <text>The ? Operator</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos538777"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_142" playOrder="142">
+      <navLabel>
+        <text>Chapter 5 Self Test</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_012.html#filepos543113"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_143" playOrder="143">
+      <navLabel>
+        <text>6   A Closer Look at Methods and Classes</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_013.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_144" playOrder="144">
+      <navLabel>
+        <text>Controlling Access to Class Members</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_013.html#filepos550365"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_145" playOrder="145">
+      <navLabel>
+        <text>Java’s Access Modifiers</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_013.html#filepos552800"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_146" playOrder="146">
+      <navLabel>
+        <text>Try This 6-1: Improving the Queue Class</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_013.html#filepos561191"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_147" playOrder="147">
+      <navLabel>
+        <text>Pass Objects to Methods</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_013.html#filepos564568"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_148" playOrder="148">
+      <navLabel>
+        <text>How Arguments Are Passed</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_013.html#filepos566094"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_149" playOrder="149">
+      <navLabel>
+        <text>Returning Objects</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_013.html#filepos571462"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_150" playOrder="150">
+      <navLabel>
+        <text>Method Overloading</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_013.html#filepos573743"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_151" playOrder="151">
+      <navLabel>
+        <text>Overloading Constructors</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_013.html#filepos582925"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_152" playOrder="152">
+      <navLabel>
+        <text>Try This 6-2: Overloading the Queue Constructor</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_013.html#filepos585278"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_153" playOrder="153">
+      <navLabel>
+        <text>Recursion</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_013.html#filepos589294"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_154" playOrder="154">
+      <navLabel>
+        <text>Understanding static</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_013.html#filepos593847"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_155" playOrder="155">
+      <navLabel>
+        <text>Static Blocks</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_013.html#filepos598607"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_156" playOrder="156">
+      <navLabel>
+        <text>Try This 6-3: The Quicksort</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_013.html#filepos600026"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_157" playOrder="157">
+      <navLabel>
+        <text>Introducing Nested and Inner Classes</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_013.html#filepos605556"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_158" playOrder="158">
+      <navLabel>
+        <text>Varargs: Variable-Length Arguments</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_013.html#filepos609827"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_159" playOrder="159">
+      <navLabel>
+        <text>Varargs Basics</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_013.html#filepos613012"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_160" playOrder="160">
+      <navLabel>
+        <text>Overloading Varargs Methods</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_013.html#filepos617411"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_161" playOrder="161">
+      <navLabel>
+        <text>Varargs and Ambiguity</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_013.html#filepos619096"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_162" playOrder="162">
+      <navLabel>
+        <text>Chapter 6 Self Test</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_013.html#filepos621591"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_163" playOrder="163">
+      <navLabel>
+        <text>7   Inheritance</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_014.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_164" playOrder="164">
+      <navLabel>
+        <text>Inheritance Basics</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_014.html#filepos630488"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_165" playOrder="165">
+      <navLabel>
+        <text>Member Access and Inheritance</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_014.html#filepos635899"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_166" playOrder="166">
+      <navLabel>
+        <text>Constructors and Inheritance</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_014.html#filepos639430"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_167" playOrder="167">
+      <navLabel>
+        <text>Using super to Call Superclass Constructors</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_014.html#filepos641906"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_168" playOrder="168">
+      <navLabel>
+        <text>Using super to Access Superclass Members</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_014.html#filepos645156"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_169" playOrder="169">
+      <navLabel>
+        <text>Try This 7-1: Extending the Vehicle Class</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_014.html#filepos646879"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_170" playOrder="170">
+      <navLabel>
+        <text>Creating a Multilevel Hierarchy</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_014.html#filepos651968"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_171" playOrder="171">
+      <navLabel>
+        <text>When Are Constructors Executed?</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_014.html#filepos654795"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_172" playOrder="172">
+      <navLabel>
+        <text>Superclass References and Subclass Objects</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_014.html#filepos656786"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_173" playOrder="173">
+      <navLabel>
+        <text>Method Overriding</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_014.html#filepos662071"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_174" playOrder="174">
+      <navLabel>
+        <text>Overridden Methods Support Polymorphism</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_014.html#filepos665296"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_175" playOrder="175">
+      <navLabel>
+        <text>Why Overridden Methods?</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_014.html#filepos669388"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_176" playOrder="176">
+      <navLabel>
+        <text>Applying Method Overriding to TwoDShape</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_014.html#filepos670662"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_177" playOrder="177">
+      <navLabel>
+        <text>Using Abstract Classes</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_014.html#filepos673851"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_178" playOrder="178">
+      <navLabel>
+        <text>Using final</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_014.html#filepos679261"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_179" playOrder="179">
+      <navLabel>
+        <text>final Prevents Overriding</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_014.html#filepos680012"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_180" playOrder="180">
+      <navLabel>
+        <text>final Prevents Inheritance</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_014.html#filepos680762"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_181" playOrder="181">
+      <navLabel>
+        <text>Using final with Data Members</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_014.html#filepos681780"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_182" playOrder="182">
+      <navLabel>
+        <text>The Object Class</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_014.html#filepos684942"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_183" playOrder="183">
+      <navLabel>
+        <text>Chapter 7 Self Test</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_014.html#filepos689469"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_184" playOrder="184">
+      <navLabel>
+        <text>8   Packages and Interfaces</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_015.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_185" playOrder="185">
+      <navLabel>
+        <text>Packages</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_015.html#filepos696575"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_186" playOrder="186">
+      <navLabel>
+        <text>Defining a Package</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_015.html#filepos698952"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_187" playOrder="187">
+      <navLabel>
+        <text>Finding Packages and CLASSPATH</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_015.html#filepos702439"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_188" playOrder="188">
+      <navLabel>
+        <text>A Short Package Example</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_015.html#filepos704612"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_189" playOrder="189">
+      <navLabel>
+        <text>Packages and Member Access</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_015.html#filepos706626"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_190" playOrder="190">
+      <navLabel>
+        <text>A Package Access Example</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_015.html#filepos709499"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_191" playOrder="191">
+      <navLabel>
+        <text>Understanding Protected Members</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_015.html#filepos711516"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_192" playOrder="192">
+      <navLabel>
+        <text>Importing Packages</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_015.html#filepos713788"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_193" playOrder="193">
+      <navLabel>
+        <text>Java’s Class Library Is Contained in Packages</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_015.html#filepos717749"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_194" playOrder="194">
+      <navLabel>
+        <text>Interfaces</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_015.html#filepos720287"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_195" playOrder="195">
+      <navLabel>
+        <text>Implementing Interfaces</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_015.html#filepos725104"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_196" playOrder="196">
+      <navLabel>
+        <text>Using Interface References</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_015.html#filepos729095"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_197" playOrder="197">
+      <navLabel>
+        <text>Try This 8-1: Creating a Queue Interface</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_015.html#filepos731136"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_198" playOrder="198">
+      <navLabel>
+        <text>Variables in Interfaces</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_015.html#filepos739244"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_199" playOrder="199">
+      <navLabel>
+        <text>Interfaces Can Be Extended</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_015.html#filepos740964"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_200" playOrder="200">
+      <navLabel>
+        <text>Default Interface Methods</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_015.html#filepos741979"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_201" playOrder="201">
+      <navLabel>
+        <text>Default Method Fundamentals</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_015.html#filepos745875"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_202" playOrder="202">
+      <navLabel>
+        <text>A More Practical Example of a Default Method</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_015.html#filepos749021"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_203" playOrder="203">
+      <navLabel>
+        <text>Multiple Inheritance Issues</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_015.html#filepos753299"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_204" playOrder="204">
+      <navLabel>
+        <text>Use static Methods in an Interface</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_015.html#filepos757105"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_205" playOrder="205">
+      <navLabel>
+        <text>Final Thoughts on Packages and Interfaces</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_015.html#filepos759150"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_206" playOrder="206">
+      <navLabel>
+        <text>Chapter 8 Self Test</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_015.html#filepos759753"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_207" playOrder="207">
+      <navLabel>
+        <text>9   Exception Handling</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_016.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_208" playOrder="208">
+      <navLabel>
+        <text>The Exception Hierarchy</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_016.html#filepos769228"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_209" playOrder="209">
+      <navLabel>
+        <text>Exception Handling Fundamentals</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_016.html#filepos770467"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_210" playOrder="210">
+      <navLabel>
+        <text>Using try and catch</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_016.html#filepos773159"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_211" playOrder="211">
+      <navLabel>
+        <text>A Simple Exception Example</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_016.html#filepos775476"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_212" playOrder="212">
+      <navLabel>
+        <text>The Consequences of an Uncaught Exception</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_016.html#filepos779340"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_213" playOrder="213">
+      <navLabel>
+        <text>Exceptions Enable You to Handle Errors Gracefully</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_016.html#filepos782057"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_214" playOrder="214">
+      <navLabel>
+        <text>Using Multiple catch Statements</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_016.html#filepos783620"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_215" playOrder="215">
+      <navLabel>
+        <text>Catching Subclass Exceptions</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_016.html#filepos784896"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_216" playOrder="216">
+      <navLabel>
+        <text>Try Blocks Can Be Nested</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_016.html#filepos787955"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_217" playOrder="217">
+      <navLabel>
+        <text>Throwing an Exception</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_016.html#filepos789793"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_218" playOrder="218">
+      <navLabel>
+        <text>Rethrowing an Exception</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_016.html#filepos791301"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_219" playOrder="219">
+      <navLabel>
+        <text>A Closer Look at Throwable</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_016.html#filepos793585"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_220" playOrder="220">
+      <navLabel>
+        <text>Using finally</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_016.html#filepos795646"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_221" playOrder="221">
+      <navLabel>
+        <text>Using throws</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_016.html#filepos797855"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_222" playOrder="222">
+      <navLabel>
+        <text>Three Recently Added Exception Features</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_016.html#filepos801048"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_223" playOrder="223">
+      <navLabel>
+        <text>Java’s Built-in Exceptions</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_016.html#filepos804759"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_224" playOrder="224">
+      <navLabel>
+        <text>Creating Exception Subclasses</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_016.html#filepos810713"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_225" playOrder="225">
+      <navLabel>
+        <text>Try This 9-1: Adding Exceptions to the Queue Class</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_016.html#filepos814531"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_226" playOrder="226">
+      <navLabel>
+        <text>Chapter 9 Self Test</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_016.html#filepos819837"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_227" playOrder="227">
+      <navLabel>
+        <text>10   Using I/O</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_228" playOrder="228">
+      <navLabel>
+        <text>Java’s I/O Is Built upon Streams</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html#filepos829029"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_229" playOrder="229">
+      <navLabel>
+        <text>Byte Streams and Character Streams</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html#filepos829806"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_230" playOrder="230">
+      <navLabel>
+        <text>The Byte Stream Classes</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html#filepos831320"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_231" playOrder="231">
+      <navLabel>
+        <text>The Character Stream Classes</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html#filepos832697"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_232" playOrder="232">
+      <navLabel>
+        <text>The Predefined Streams</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html#filepos833952"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_233" playOrder="233">
+      <navLabel>
+        <text>Using the Byte Streams</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html#filepos835666"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_234" playOrder="234">
+      <navLabel>
+        <text>Reading Console Input</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html#filepos837345"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_235" playOrder="235">
+      <navLabel>
+        <text>Writing Console Output</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html#filepos840727"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_236" playOrder="236">
+      <navLabel>
+        <text>Reading and Writing Files Using Byte Streams</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html#filepos843472"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_237" playOrder="237">
+      <navLabel>
+        <text>Inputting from a File</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html#filepos844491"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_238" playOrder="238">
+      <navLabel>
+        <text>Writing to a File</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html#filepos851413"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_239" playOrder="239">
+      <navLabel>
+        <text>Automatically Closing a File</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html#filepos853897"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_240" playOrder="240">
+      <navLabel>
+        <text>Reading and Writing Binary Data</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html#filepos861385"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_241" playOrder="241">
+      <navLabel>
+        <text>Try This 10-1: A File Comparison Utility</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html#filepos865854"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_242" playOrder="242">
+      <navLabel>
+        <text>Random-Access Files</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html#filepos868986"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_243" playOrder="243">
+      <navLabel>
+        <text>Using Java’s Character-Based Streams</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html#filepos874756"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_244" playOrder="244">
+      <navLabel>
+        <text>Console Input Using Character Streams</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html#filepos876529"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_245" playOrder="245">
+      <navLabel>
+        <text>Console Output Using Character Streams</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html#filepos882167"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_246" playOrder="246">
+      <navLabel>
+        <text>File I/O Using Character Streams</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html#filepos885521"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_247" playOrder="247">
+      <navLabel>
+        <text>Using a FileWriter</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html#filepos886141"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_248" playOrder="248">
+      <navLabel>
+        <text>Using a FileReader</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html#filepos887595"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_249" playOrder="249">
+      <navLabel>
+        <text>Using Java’s Type Wrappers to Convert Numeric Strings</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html#filepos892041"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_250" playOrder="250">
+      <navLabel>
+        <text>Try This 10-2: Creating a Disk-Based Help System</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html#filepos898926"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_251" playOrder="251">
+      <navLabel>
+        <text>Chapter 10 Self Test</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_017.html#filepos912415"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_252" playOrder="252">
+      <navLabel>
+        <text>11   Multithreaded Programming</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_018.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_253" playOrder="253">
+      <navLabel>
+        <text>Multithreading Fundamentals</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_018.html#filepos919577"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_254" playOrder="254">
+      <navLabel>
+        <text>The Thread Class and Runnable Interface</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_018.html#filepos923735"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_255" playOrder="255">
+      <navLabel>
+        <text>Creating a Thread</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_018.html#filepos926746"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_256" playOrder="256">
+      <navLabel>
+        <text>Some Simple Improvements</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_018.html#filepos934855"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_257" playOrder="257">
+      <navLabel>
+        <text>Try This 11-1: Extending Thread</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_018.html#filepos938299"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_258" playOrder="258">
+      <navLabel>
+        <text>Creating Multiple Threads</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_018.html#filepos942878"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_259" playOrder="259">
+      <navLabel>
+        <text>Determining When a Thread Ends</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_018.html#filepos945726"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_260" playOrder="260">
+      <navLabel>
+        <text>Thread Priorities</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_018.html#filepos948776"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_261" playOrder="261">
+      <navLabel>
+        <text>Synchronization</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_018.html#filepos954911"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_262" playOrder="262">
+      <navLabel>
+        <text>Using Synchronized Methods</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_018.html#filepos956962"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_263" playOrder="263">
+      <navLabel>
+        <text>The synchronized Statement</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_018.html#filepos962130"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_264" playOrder="264">
+      <navLabel>
+        <text>Thread Communication Using notify( ), wait( ), and notifyAll( )</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_018.html#filepos966495"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_265" playOrder="265">
+      <navLabel>
+        <text>An Example That Uses wait( ) and notify( )</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_018.html#filepos970367"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_266" playOrder="266">
+      <navLabel>
+        <text>Suspending, Resuming, and Stopping Threads</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_018.html#filepos980888"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_267" playOrder="267">
+      <navLabel>
+        <text>Try This 11-2: Using the Main Thread</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_018.html#filepos987254"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_268" playOrder="268">
+      <navLabel>
+        <text>Chapter 11 Self Test</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_018.html#filepos990755"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_269" playOrder="269">
+      <navLabel>
+        <text>12   Enumerations, Autoboxing, Static Import, and Annotations</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_019.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_270" playOrder="270">
+      <navLabel>
+        <text>Enumerations</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_019.html#filepos998065"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_271" playOrder="271">
+      <navLabel>
+        <text>Enumeration Fundamentals</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_019.html#filepos999485"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_272" playOrder="272">
+      <navLabel>
+        <text>Java Enumerations Are Class Types</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_019.html#filepos1004757"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_273" playOrder="273">
+      <navLabel>
+        <text>The values( ) and valueOf( ) Methods</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_019.html#filepos1005573"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_274" playOrder="274">
+      <navLabel>
+        <text>Constructors, Methods, Instance Variables, and Enumerations</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_019.html#filepos1008285"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_275" playOrder="275">
+      <navLabel>
+        <text>Two Important Restrictions</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_019.html#filepos1013262"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_276" playOrder="276">
+      <navLabel>
+        <text>Enumerations Inherit Enum</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_019.html#filepos1013843"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_277" playOrder="277">
+      <navLabel>
+        <text>Try This 12-1: A Computer-Controlled Traffic Light</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_019.html#filepos1016682"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_278" playOrder="278">
+      <navLabel>
+        <text>Autoboxing</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_019.html#filepos1026556"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_279" playOrder="279">
+      <navLabel>
+        <text>Type Wrappers</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_019.html#filepos1027579"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_280" playOrder="280">
+      <navLabel>
+        <text>Autoboxing Fundamentals</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_019.html#filepos1034347"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_281" playOrder="281">
+      <navLabel>
+        <text>Autoboxing and Methods</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_019.html#filepos1036594"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_282" playOrder="282">
+      <navLabel>
+        <text>Autoboxing/Unboxing Occurs in Expressions</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_019.html#filepos1038381"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_283" playOrder="283">
+      <navLabel>
+        <text>A Word of Warning</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_019.html#filepos1040577"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_284" playOrder="284">
+      <navLabel>
+        <text>Static Import</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_019.html#filepos1042005"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_285" playOrder="285">
+      <navLabel>
+        <text>Annotations (Metadata)</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_019.html#filepos1049925"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_286" playOrder="286">
+      <navLabel>
+        <text>Chapter 12 Self Test</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_019.html#filepos1056508"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_287" playOrder="287">
+      <navLabel>
+        <text>13   Generics</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_288" playOrder="288">
+      <navLabel>
+        <text>Generics Fundamentals</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html#filepos1065117"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_289" playOrder="289">
+      <navLabel>
+        <text>A Simple Generics Example</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html#filepos1068640"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_290" playOrder="290">
+      <navLabel>
+        <text>Generics Work Only with Reference Types</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html#filepos1079040"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_291" playOrder="291">
+      <navLabel>
+        <text>Generic Types Differ Based on Their Type Arguments</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html#filepos1080101"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_292" playOrder="292">
+      <navLabel>
+        <text>A Generic Class with Two Type Parameters</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html#filepos1081033"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_293" playOrder="293">
+      <navLabel>
+        <text>The General Form of a Generic Class</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html#filepos1083204"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_294" playOrder="294">
+      <navLabel>
+        <text>Bounded Types</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html#filepos1084127"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_295" playOrder="295">
+      <navLabel>
+        <text>Using Wildcard Arguments</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html#filepos1090339"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_296" playOrder="296">
+      <navLabel>
+        <text>Bounded Wildcards</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html#filepos1095207"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_297" playOrder="297">
+      <navLabel>
+        <text>Generic Methods</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html#filepos1101442"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_298" playOrder="298">
+      <navLabel>
+        <text>Generic Constructors</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html#filepos1106711"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_299" playOrder="299">
+      <navLabel>
+        <text>Generic Interfaces</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html#filepos1107938"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_300" playOrder="300">
+      <navLabel>
+        <text>Try This 13-1: Create a Generic Queue</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html#filepos1113827"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_301" playOrder="301">
+      <navLabel>
+        <text>Raw Types and Legacy Code</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html#filepos1121040"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_302" playOrder="302">
+      <navLabel>
+        <text>Type Inference with the Diamond Operator</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html#filepos1127222"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_303" playOrder="303">
+      <navLabel>
+        <text>Erasure</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html#filepos1131699"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_304" playOrder="304">
+      <navLabel>
+        <text>Ambiguity Errors</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html#filepos1133449"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_305" playOrder="305">
+      <navLabel>
+        <text>Some Generic Restrictions</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html#filepos1135726"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_306" playOrder="306">
+      <navLabel>
+        <text>Type Parameters Can’t Be Instantiated</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html#filepos1136110"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_307" playOrder="307">
+      <navLabel>
+        <text>Restrictions on Static Members</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html#filepos1136816"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_308" playOrder="308">
+      <navLabel>
+        <text>Generic Array Restrictions</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html#filepos1137622"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_309" playOrder="309">
+      <navLabel>
+        <text>Generic Exception Restriction</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html#filepos1139877"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_310" playOrder="310">
+      <navLabel>
+        <text>Continuing Your Study of Generics</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html#filepos1140181"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_311" playOrder="311">
+      <navLabel>
+        <text>Chapter 13 Self Test</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_020.html#filepos1140900"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_312" playOrder="312">
+      <navLabel>
+        <text>14   Lambda Expressions and Method References</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_021.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_313" playOrder="313">
+      <navLabel>
+        <text>Introducing Lambda Expressions</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_021.html#filepos1150281"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_314" playOrder="314">
+      <navLabel>
+        <text>Lambda Expression Fundamentals</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_021.html#filepos1152760"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_315" playOrder="315">
+      <navLabel>
+        <text>Functional Interfaces</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_021.html#filepos1157183"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_316" playOrder="316">
+      <navLabel>
+        <text>Lambda Expressions in Action</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_021.html#filepos1164611"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_317" playOrder="317">
+      <navLabel>
+        <text>Block Lambda Expressions</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_021.html#filepos1172183"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_318" playOrder="318">
+      <navLabel>
+        <text>Generic Functional Interfaces</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_021.html#filepos1175390"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_319" playOrder="319">
+      <navLabel>
+        <text>Try This 14-1: Pass a Lambda Expression as an Argument</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_021.html#filepos1178923"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_320" playOrder="320">
+      <navLabel>
+        <text>Lambda Expressions and Variable Capture</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_021.html#filepos1189285"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_321" playOrder="321">
+      <navLabel>
+        <text>Throw an Exception from Within a Lambda Expression</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_021.html#filepos1192372"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_322" playOrder="322">
+      <navLabel>
+        <text>Method References</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_021.html#filepos1196487"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_323" playOrder="323">
+      <navLabel>
+        <text>Method References to static Methods</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_021.html#filepos1197173"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_324" playOrder="324">
+      <navLabel>
+        <text>Method References to Instance Methods</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_021.html#filepos1200286"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_325" playOrder="325">
+      <navLabel>
+        <text>Constructor References</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_021.html#filepos1207260"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_326" playOrder="326">
+      <navLabel>
+        <text>Predefined Functional Interfaces</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_021.html#filepos1214229"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_327" playOrder="327">
+      <navLabel>
+        <text>Chapter 14 Self Test</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_021.html#filepos1220056"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_328" playOrder="328">
+      <navLabel>
+        <text>15   Applets, Events, and Miscellaneous Topics</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_329" playOrder="329">
+      <navLabel>
+        <text>Applet Basics</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1230061"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_330" playOrder="330">
+      <navLabel>
+        <text>Applet Organization and Essential Elements</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1240892"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_331" playOrder="331">
+      <navLabel>
+        <text>The Applet Architecture</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1241355"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_332" playOrder="332">
+      <navLabel>
+        <text>A Complete Applet Skeleton</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1244091"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_333" playOrder="333">
+      <navLabel>
+        <text>Applet Initialization and Termination</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1245932"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_334" playOrder="334">
+      <navLabel>
+        <text>Requesting Repainting</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1248772"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_335" playOrder="335">
+      <navLabel>
+        <text>The update( ) Method</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1253045"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_336" playOrder="336">
+      <navLabel>
+        <text>Try This 15-1: A Simple Banner Applet</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1253965"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_337" playOrder="337">
+      <navLabel>
+        <text>Using the Status Window</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1260593"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_338" playOrder="338">
+      <navLabel>
+        <text>Passing Parameters to Applets</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1262203"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_339" playOrder="339">
+      <navLabel>
+        <text>The Applet Class</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1263891"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_340" playOrder="340">
+      <navLabel>
+        <text>Event Handling</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1265235"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_341" playOrder="341">
+      <navLabel>
+        <text>The Delegation Event Model</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1266332"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_342" playOrder="342">
+      <navLabel>
+        <text>Events</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1267335"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_343" playOrder="343">
+      <navLabel>
+        <text>Event Sources</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1267852"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_344" playOrder="344">
+      <navLabel>
+        <text>Event Listeners</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1269738"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_345" playOrder="345">
+      <navLabel>
+        <text>Event Classes</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1270667"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_346" playOrder="346">
+      <navLabel>
+        <text>Event Listener Interfaces</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1272067"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_347" playOrder="347">
+      <navLabel>
+        <text>Using the Delegation Event Model</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1273151"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_348" playOrder="348">
+      <navLabel>
+        <text>Handling Mouse and Mouse Motion Events</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1274780"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_349" playOrder="349">
+      <navLabel>
+        <text>A Simple Mouse Event Applet</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1277359"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_350" playOrder="350">
+      <navLabel>
+        <text>More Java Keywords</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1282466"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_351" playOrder="351">
+      <navLabel>
+        <text>The transient and volatile Modifiers</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1284055"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_352" playOrder="352">
+      <navLabel>
+        <text>instanceof</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1285489"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_353" playOrder="353">
+      <navLabel>
+        <text>strictfp</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1287195"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_354" playOrder="354">
+      <navLabel>
+        <text>assert</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1288016"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_355" playOrder="355">
+      <navLabel>
+        <text>Native Methods</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1291179"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_356" playOrder="356">
+      <navLabel>
+        <text>Chapter 15 Self Test</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_022.html#filepos1296605"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_357" playOrder="357">
+      <navLabel>
+        <text>16   Introducing Swing</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_023.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_358" playOrder="358">
+      <navLabel>
+        <text>The Origins and Design Philosophy of Swing</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_023.html#filepos1306264"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_359" playOrder="359">
+      <navLabel>
+        <text>Components and Containers</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_023.html#filepos1314146"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_360" playOrder="360">
+      <navLabel>
+        <text>Components</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_023.html#filepos1315179"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_361" playOrder="361">
+      <navLabel>
+        <text>Containers</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_023.html#filepos1316772"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_362" playOrder="362">
+      <navLabel>
+        <text>The Top-Level Container Panes</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_023.html#filepos1318438"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_363" playOrder="363">
+      <navLabel>
+        <text>Layout Managers</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_023.html#filepos1320338"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_364" playOrder="364">
+      <navLabel>
+        <text>A First Simple Swing Program</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_023.html#filepos1324094"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_365" playOrder="365">
+      <navLabel>
+        <text>The First Swing Example Line by Line</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_023.html#filepos1327052"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_366" playOrder="366">
+      <navLabel>
+        <text>Use JButton</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_023.html#filepos1342056"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_367" playOrder="367">
+      <navLabel>
+        <text>Work with JTextField</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_023.html#filepos1350455"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_368" playOrder="368">
+      <navLabel>
+        <text>Create a JCheckBox</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_023.html#filepos1358244"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_369" playOrder="369">
+      <navLabel>
+        <text>Work with JList</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_023.html#filepos1363420"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_370" playOrder="370">
+      <navLabel>
+        <text>Try This 16-1: A Swing-Based File Comparison Utility</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_023.html#filepos1372428"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_371" playOrder="371">
+      <navLabel>
+        <text>Use Anonymous Inner Classes or Lambda Expressions to Handle Events</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_023.html#filepos1378710"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_372" playOrder="372">
+      <navLabel>
+        <text>Create a Swing Applet</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_023.html#filepos1383688"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_373" playOrder="373">
+      <navLabel>
+        <text>Chapter 16 Self Test</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_023.html#filepos1388171"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_374" playOrder="374">
+      <navLabel>
+        <text>17   Introducing JavaFX</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_375" playOrder="375">
+      <navLabel>
+        <text>JavaFX Basic Concepts</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1400394"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_376" playOrder="376">
+      <navLabel>
+        <text>The JavaFX Packages</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1401142"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_377" playOrder="377">
+      <navLabel>
+        <text>The Stage and Scene Classes</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1401800"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_378" playOrder="378">
+      <navLabel>
+        <text>Nodes and Scene Graphs</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1403424"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_379" playOrder="379">
+      <navLabel>
+        <text>Layouts</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1404804"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_380" playOrder="380">
+      <navLabel>
+        <text>The Application Class and the Life-cycle Methods</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1405410"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_381" playOrder="381">
+      <navLabel>
+        <text>Launching a JavaFX Application</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1407431"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_382" playOrder="382">
+      <navLabel>
+        <text>A JavaFX Application Skeleton</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1408989"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_383" playOrder="383">
+      <navLabel>
+        <text>Compiling and Running a JavaFX Program</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1418080"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_384" playOrder="384">
+      <navLabel>
+        <text>The Application Thread</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1419363"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_385" playOrder="385">
+      <navLabel>
+        <text>A Simple JavaFX Control: Label</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1420606"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_386" playOrder="386">
+      <navLabel>
+        <text>Using Buttons and Events</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1425828"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_387" playOrder="387">
+      <navLabel>
+        <text>Event Basics</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1426787"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_388" playOrder="388">
+      <navLabel>
+        <text>Introducing the Button Control</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1428877"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_389" playOrder="389">
+      <navLabel>
+        <text>Demonstrating Event Handling and the Button</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1431063"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_390" playOrder="390">
+      <navLabel>
+        <text>Three More JavaFX Controls</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1436753"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_391" playOrder="391">
+      <navLabel>
+        <text>CheckBox</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1437833"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_392" playOrder="392">
+      <navLabel>
+        <text>Try This 17-1: Use the CheckBox Indeterminate State</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1441861"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_393" playOrder="393">
+      <navLabel>
+        <text>ListView</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1445643"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_394" playOrder="394">
+      <navLabel>
+        <text>TextField</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1456861"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_395" playOrder="395">
+      <navLabel>
+        <text>Introducing Effects and Transforms</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1461976"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_396" playOrder="396">
+      <navLabel>
+        <text>Effects</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1462734"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_397" playOrder="397">
+      <navLabel>
+        <text>Transforms</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1469990"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_398" playOrder="398">
+      <navLabel>
+        <text>Demonstrating Effects and Transforms</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1475170"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_399" playOrder="399">
+      <navLabel>
+        <text>What Next?</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1477238"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_400" playOrder="400">
+      <navLabel>
+        <text>Chapter 17 Self Test</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_024.html#filepos1480164"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_401" playOrder="401">
+      <navLabel>
+        <text>A   Answers to Self Tests</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_402" playOrder="402">
+      <navLabel>
+        <text>Chapter 1: Java Fundamentals</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1485973"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_403" playOrder="403">
+      <navLabel>
+        <text>Chapter 2: Introducing Data Types and Operators</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1491724"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_404" playOrder="404">
+      <navLabel>
+        <text>Chapter 3: Program Control Statements</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1497692"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_405" playOrder="405">
+      <navLabel>
+        <text>Chapter 4: Introducing Classes, Objects, and Methods</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1504202"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_406" playOrder="406">
+      <navLabel>
+        <text>Chapter 5: More Data Types and Operators</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1509277"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_407" playOrder="407">
+      <navLabel>
+        <text>Chapter 6: A Closer Look at Methods and Classes</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1516982"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_408" playOrder="408">
+      <navLabel>
+        <text>Chapter 7: Inheritance</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1525627"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_409" playOrder="409">
+      <navLabel>
+        <text>Chapter 8: Packages and Interfaces</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1532076"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_410" playOrder="410">
+      <navLabel>
+        <text>Chapter 9: Exception Handling</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1540446"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_411" playOrder="411">
+      <navLabel>
+        <text>Chapter 10: Using I/O</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1547159"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_412" playOrder="412">
+      <navLabel>
+        <text>Chapter 11: Multithreaded Programming</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1553712"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_413" playOrder="413">
+      <navLabel>
+        <text>Chapter 12: Enumerations, Autoboxing, Static Import, and Annotations</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1559210"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_414" playOrder="414">
+      <navLabel>
+        <text>Chapter 13: Generics</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1567173"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_415" playOrder="415">
+      <navLabel>
+        <text>Chapter 14: Lambda Expressions and Method References</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1575440"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_416" playOrder="416">
+      <navLabel>
+        <text>Chapter 15: Applets, Events, and Miscellaneous Topics</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1585176"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_417" playOrder="417">
+      <navLabel>
+        <text>Chapter 16: Introducing Swing</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1591154"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_418" playOrder="418">
+      <navLabel>
+        <text>Chapter 17: Introducing JavaFX</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_025.html#filepos1598992"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_419" playOrder="419">
+      <navLabel>
+        <text>B   Using Java’s Documentation Comments</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_026.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_420" playOrder="420">
+      <navLabel>
+        <text>The javadoc Tags</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_026.html#filepos1607788"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_421" playOrder="421">
+      <navLabel>
+        <text>@author</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_026.html#filepos1613547"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_422" playOrder="422">
+      <navLabel>
+        <text>{@code}</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_026.html#filepos1614193"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_423" playOrder="423">
+      <navLabel>
+        <text>@deprecated</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_026.html#filepos1614680"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_424" playOrder="424">
+      <navLabel>
+        <text>{@docRoot}</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_026.html#filepos1615427"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_425" playOrder="425">
+      <navLabel>
+        <text>@exception</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_026.html#filepos1615692"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_426" playOrder="426">
+      <navLabel>
+        <text>{@inheritDoc}</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_026.html#filepos1616381"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_427" playOrder="427">
+      <navLabel>
+        <text>{@link}</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_026.html#filepos1616619"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_428" playOrder="428">
+      <navLabel>
+        <text>{@linkplain}</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_026.html#filepos1617214"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_429" playOrder="429">
+      <navLabel>
+        <text>{@literal}</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_026.html#filepos1617548"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_430" playOrder="430">
+      <navLabel>
+        <text>@param</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_026.html#filepos1618118"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_431" playOrder="431">
+      <navLabel>
+        <text>@return</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_026.html#filepos1618774"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_432" playOrder="432">
+      <navLabel>
+        <text>@see</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_026.html#filepos1619350"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_433" playOrder="433">
+      <navLabel>
+        <text>@serial</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_026.html#filepos1620520"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_434" playOrder="434">
+      <navLabel>
+        <text>@serialData</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_026.html#filepos1621004"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_435" playOrder="435">
+      <navLabel>
+        <text>@serialField</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_026.html#filepos1621538"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_436" playOrder="436">
+      <navLabel>
+        <text>@since</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_026.html#filepos1622170"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_437" playOrder="437">
+      <navLabel>
+        <text>@throws</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_026.html#filepos1622710"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_438" playOrder="438">
+      <navLabel>
+        <text>{@value}</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_026.html#filepos1622957"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_439" playOrder="439">
+      <navLabel>
+        <text>@version</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_026.html#filepos1623744"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_440" playOrder="440">
+      <navLabel>
+        <text>The General Form of a Documentation Comment</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_026.html#filepos1624430"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_441" playOrder="441">
+      <navLabel>
+        <text>What javadoc Outputs</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_026.html#filepos1625471"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_442" playOrder="442">
+      <navLabel>
+        <text>An Example That Uses Documentation Comments</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_026.html#filepos1625974"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_443" playOrder="443">
+      <navLabel>
+        <text>Index</text>
+      </navLabel>
+      <content src="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_027.html"/>
+    </navPoint>
+  </navMap>
+</ncx>

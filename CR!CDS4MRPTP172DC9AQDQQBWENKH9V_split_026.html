@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Java&amp;#8482;: A Beginner&amp;#8217;s Guide Sixth Edition</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="page_styles.css" rel="stylesheet" type="text/css"/>
+</head>
+  <body class="calibre">
+<div id="filepos1606523" class="calibre29"><span><img alt="image" src="images/00003.jpg" class="calibre30"/></span></div><div class="calibre11"> </div>
+<div class="calibre31"><span class="calibre2"><span><big class="calibre3"><big class="calibre4"><big class="calibre5"><big class="calibre6"><big class="calibre32"><big class="calibre4">Appendix B</big></big></big></big></big></big></span></span></div>
+<div class="calibre9"><span class="calibre2"><span>Using Java’s Documentation Comments</span></span></div><div class="calibre33"> </div>
+<div class="calibre12"><span><span><span class="calibre2"><span class="bold1">A</span></span></span>s explained in <a href="CR%21CDS4MRPTP172DC9AQDQQBWENKH9V_split_008.html#filepos130552">Chapter 1</a>, Java supports three types of comments. The first two are the <span class="bold1">//</span> and the <span class="bold1">/* */</span>. The third type is called a <span class="italic">documentation comment</span>. It begins with the character sequence <span class="bold1">/**</span>. It ends with <span class="bold1">*/</span>. Documentation comments allow you to embed information about your program into the program itself. You can then use the <span class="bold1">javadoc</span> utility program (supplied with the JDK) to extract the information and put it into an HTML file. Documentation comments make it convenient to document your programs. You have almost certainly seen documentation generated with <span class="bold1">javadoc</span>, because that is the way the Java API library was documented.</span></div>
+<div id="filepos1607788" class="calibre1"><span class="calibre10"><span><span class="bold1">The javadoc Tags</span></span></span></div>
+<div class="calibre12"><span>The <span class="bold1">javadoc</span> utility recognizes the following tags:</span></div>
+<div class="calibre11"> </div><table border="1" cellpadding="3" cellspacing="0" class="calibre37">
+<tr class="calibre41">
+<td class="calibre83"><span class="bold1">Tag</span></td>
+<td class="calibre83"><span class="bold1">Meaning</span></td>
+</tr>
+<tr class="calibre41">
+<td class="calibre42">@author</td>
+<td class="calibre42">Identifies the author.</td>
+</tr>
+<tr class="calibre41">
+<td class="calibre42">{@code}</td>
+<td class="calibre42">Displays information as-is, without processing HTML styles, in code font.</td>
+</tr>
+<tr class="calibre41">
+<td class="calibre42">@deprecated      </td>
+<td class="calibre42">Specifies that a program element is deprecated.</td>
+</tr>
+<tr class="calibre41">
+<td class="calibre42">{@docRoot}</td>
+<td class="calibre42">Specifies the path to the root directory of the current documentation.</td>
+</tr>
+<tr class="calibre41">
+<td class="calibre42">@exception</td>
+<td class="calibre42">Identifies an exception thrown by a method or constructor.</td>
+</tr>
+<tr class="calibre41">
+<td class="calibre42">{@inheritDoc}</td>
+<td class="calibre42">Inherits a comment from the immediate superclass.</td>
+</tr>
+<tr class="calibre41">
+<td class="calibre42">{@link}</td>
+<td class="calibre42">Inserts an in-line link to another topic.</td>
+</tr>
+<tr class="calibre41">
+<td class="calibre42">{@linkplain}</td>
+<td class="calibre42">Inserts an in-line link to another topic, but the link is displayed in a plain-text font.</td>
+</tr>
+<tr class="calibre41">
+<td class="calibre42">{@literal}</td>
+<td class="calibre42">Displays information as-is, without processing HTML styles.</td>
+</tr>
+<tr class="calibre41">
+<td class="calibre42">@param</td>
+<td class="calibre42">Documents a parameter.</td>
+</tr>
+<tr class="calibre41">
+<td class="calibre42">@return</td>
+<td class="calibre42">Documents a method’s return value.</td>
+</tr>
+<tr class="calibre41">
+<td class="calibre42">@see</td>
+<td class="calibre42">Specifies a link to another topic.</td>
+</tr>
+<tr class="calibre41">
+<td class="calibre42">@serial</td>
+<td class="calibre42">Documents a default serializable field.</td>
+</tr>
+<tr class="calibre41">
+<td class="calibre42">@serialData</td>
+<td class="calibre42">Documents the data written by the <span class="bold1">writeObject( )</span> or <span class="bold1">writeExternal( )</span> methods.</td>
+</tr>
+<tr class="calibre41">
+<td class="calibre42">@serialField</td>
+<td class="calibre42">Documents an <span class="bold1">ObjectStreamField</span> component.</td>
+</tr>
+<tr class="calibre41">
+<td class="calibre42">@since</td>
+<td class="calibre42">States the release when a specific change was introduced.</td>
+</tr>
+<tr class="calibre41">
+<td class="calibre42">@throws</td>
+<td class="calibre42">Same as <span class="bold1">@exception</span>.</td>
+</tr>
+<tr class="calibre41">
+<td class="calibre42">{@value}</td>
+<td class="calibre42">Displays the value of a constant, which must be a <span class="bold1">static</span> field.</td>
+</tr>
+<tr class="calibre41">
+<td class="calibre42">@version</td>
+<td class="calibre42">Specifies the version of a class.</td>
+</tr>
+</table><div class="calibre43"> </div>
+<div class="calibre23"><span>Document tags that begin with an “at” sign (@) are called <span class="italic">stand-alone</span> tags (also called <span class="italic">block tags</span>), and they must be used on their own line. Tags that begin with a brace, such as <span class="bold1">{@code}</span>, are called <span class="italic">in-line</span> tags, and they can be used within a larger description. You may also use other, standard HTML tags in a documentation comment. However, some tags such as headings should not be used, because they disrupt the look of the HTML file produced by <span class="bold1">javadoc</span>.</span></div>
+<div class="calibre23"><span>As it relates to documenting source code, you can use documentation comments to document classes, interfaces, fields, constructors, and methods. In all cases, the documentation comment must immediately precede the item being documented. Some tags, such as <span class="bold1">@see</span>, <span class="bold1">@since</span>, and <span class="bold1">@deprecated</span>, can be used to document any element. Other tags apply to only the relevant elements. Each tag is examined next.</span></div>
+<div class="calibre44"><span class="calibre10"><span><span class="bold1"><span class="italic">NOTE</span></span></span></span></div>
+<div class="calibre9"><span><img alt="image" src="images/00006.jpg" class="calibre45"/></span></div>
+<div class="calibre9"><span>Documentation comments can also be used for documenting a package and preparing an overview, but the procedures differ from those used to document source code. See the <span class="bold1">javadoc</span> documentation for details on these uses.</span></div><div class="calibre11"> </div>
+<div id="filepos1613547" class="calibre1"><span class="calibre10"><span><span class="bold1">@author</span></span></span></div>
+<div class="calibre12"><span>The <span class="bold1">@author</span> tag documents the author of a class or interface. It has the following syntax:</span></div>
+<div class="calibre27"><span>@author <span class="italic">description</span></span></div>
+<div class="calibre27"><span>Here, <span class="italic">description</span> will usually be the name of the author. You will need to specify the <span class="bold1">-author</span> option when executing <span class="bold1">javadoc</span> in order for the <span class="bold1">@author</span> field to be included in the HTML documentation.</span></div>
+<div id="filepos1614193" class="calibre1"><span class="calibre10"><span><span class="bold1">{@code}</span></span></span></div>
+<div class="calibre12"><span>The <span class="bold1">{@code}</span> tag enables you to embed text, such as a snippet of code, into a comment. That text is then displayed as-is in code font, without any further processing such as HTML rendering. It has the following syntax:</span></div>
+<div class="calibre27"><span>{@code <span class="italic">code-snippet</span>}</span></div>
+<div id="filepos1614680" class="calibre1"><span class="calibre10"><span><span class="bold1">@deprecated</span></span></span></div>
+<div class="calibre12"><span>The <span class="bold1">@deprecated</span> tag specifies that a program element is deprecated. It is recommended that you include <span class="bold1">@see</span> or <span class="bold1">{@link}</span> tags to inform the programmer about available alternatives. The syntax is the following:</span></div>
+<div class="calibre27"><span>@deprecated <span class="italic">description</span></span></div>
+<div class="calibre27"><span>Here, <span class="italic">description</span> is the message that describes the deprecation. The <span class="bold1">@deprecated</span> tag can be used in documentation for fields, methods, constructors, classes, and interfaces.</span></div>
+<div id="filepos1615427" class="calibre1"><span class="calibre10"><span><span class="bold1">{@docRoot}</span></span></span></div>
+<div class="calibre12"><span><span class="bold1">{@docRoot}</span> specifies the path to the root directory of the current documentation.</span></div>
+<div id="filepos1615692" class="calibre1"><span class="calibre10"><span><span class="bold1">@exception</span></span></span></div>
+<div class="calibre12"><span>The <span class="bold1">@exception</span> tag describes an exception to a method. It has the following syntax:</span></div>
+<div class="calibre27"><span>@exception <span class="italic">exception-name explanation</span></span></div>
+<div class="calibre27"><span>Here, the fully qualified name of the exception is specified by <span class="italic">exception-name</span>, and <span class="italic">explanation</span> is a string that describes how the exception can occur. The <span class="bold1">@exception</span> tag can be used only in documentation for a method or constructor.</span></div>
+<div id="filepos1616381" class="calibre1"><span class="calibre10"><span><span class="bold1">{@inheritDoc}</span></span></span></div>
+<div class="calibre12"><span>This tag inherits a comment from the immediate superclass.</span></div>
+<div id="filepos1616619" class="calibre1"><span class="calibre10"><span><span class="bold1">{@link}</span></span></span></div>
+<div class="calibre12"><span>The <span class="bold1">{@link}</span> tag provides an in-line link to additional information. It has the following syntax:</span></div>
+<div class="calibre27"><span>{@link <span class="italic">pkg.class</span>#<span class="italic">member text</span>}</span></div>
+<div class="calibre27"><span>Here, <span class="italic">pkg.class</span>#<span class="italic">member</span> specifies the name of a class or method to which a link is added, and <span class="italic">text</span> is the string that is displayed.</span></div>
+<div id="filepos1617214" class="calibre1"><span class="calibre10"><span><span class="bold1">{@linkplain}</span></span></span></div>
+<div class="calibre12"><span>The <span class="bold1">{@linkplain}</span> tag inserts an in-line link to another topic. The link is displayed in plain-text font. Otherwise, it is similar to <span class="bold1">{@link}</span>.</span></div>
+<div id="filepos1617548" class="calibre1"><span class="calibre10"><span><span class="bold1">{@literal}</span></span></span></div>
+<div class="calibre12"><span>The <span class="bold1">{@literal}</span> tag enables you to embed text into a comment. That text is then displayed as-is, without any further processing such as HTML rendering. It has the following syntax:</span></div>
+<div class="calibre27"><span>{@literal <span class="italic">description</span>}</span></div>
+<div class="calibre27"><span>Here, <span class="italic">description</span> is the text that is embedded.</span></div>
+<div id="filepos1618118" class="calibre1"><span class="calibre10"><span><span class="bold1">@param</span></span></span></div>
+<div class="calibre12"><span>The <span class="bold1">@param</span> tag documents a parameter. It has the following syntax:</span></div>
+<div class="calibre27"><span>@param <span class="italic">parameter-name explanation</span></span></div>
+<div class="calibre27"><span>Here, <span class="italic">parameter-name</span> specifies the name of a parameter. The meaning of that parameter is described by <span class="italic">explanation</span>. The <span class="bold1">@param</span> tag can be used only in documentation for a method, a constructor, or a generic class or interface.</span></div>
+<div id="filepos1618774" class="calibre1"><span class="calibre10"><span><span class="bold1">@return</span></span></span></div>
+<div class="calibre12"><span>The <span class="bold1">@return</span> tag describes the return value of a method. It has the following syntax:</span></div>
+<div class="calibre27"><span>@return <span class="italic">explanation</span></span></div>
+<div class="calibre27"><span>Here, <span class="italic">explanation</span> describes the type and meaning of the value returned by a method. The <span class="bold1">@return</span> tag can be used only in documentation for a method.</span></div>
+<div id="filepos1619350" class="calibre1"><span class="calibre10"><span><span class="bold1">@see</span></span></span></div>
+<div class="calibre12"><span>The <span class="bold1">@see</span> tag provides a reference to additional information. Two commonly used forms are shown here:</span></div>
+<div class="calibre27"><span>@see <span class="italic">anchor</span></span></div>
+<div class="calibre27"><span>@see <span class="italic">pkg.class</span>#<span class="italic">member text</span></span></div>
+<div class="calibre27"><span>In the first form, <span class="italic">anchor</span> is a link to an absolute or relative URL. In the second form, <span class="italic">pkg.class</span>#<span class="italic">member</span> specifies the name of the item, and <span class="italic">text</span> is the text displayed for that item. The text parameter is optional, and if not used, then the item specified by <span class="italic">pkg.class</span>#<span class="italic">member</span> is displayed. The member name, too, is optional. Thus, you can specify a reference to a package, class, or interface in addition to a reference to a specific method or field. The name can be fully qualified or partially qualified. However, the dot that precedes the member name (if it exists) must be replaced by a hash character.</span></div>
+<div id="filepos1620520" class="calibre1"><span class="calibre10"><span><span class="bold1">@serial</span></span></span></div>
+<div class="calibre12"><span>The <span class="bold1">@serial</span> tag defines the comment for a default serializable field. It has the following syntax:</span></div>
+<div class="calibre27"><span>@serial <span class="italic">description</span></span></div>
+<div class="calibre27"><span>Here, <span class="italic">description</span> is the comment for that field.</span></div>
+<div id="filepos1621004" class="calibre1"><span class="calibre10"><span><span class="bold1">@serialData</span></span></span></div>
+<div class="calibre12"><span>The <span class="bold1">@serialData</span> tag documents the data written by the <span class="bold1">writeObject( )</span> and <span class="bold1">writeExternal( )</span> methods. It has the following syntax:</span></div>
+<div class="calibre27"><span>@serialData <span class="italic">description</span></span></div>
+<div class="calibre27"><span>Here, <span class="italic">description</span> is the comment for that data.</span></div>
+<div id="filepos1621538" class="calibre1"><span class="calibre10"><span><span class="bold1">@serialField</span></span></span></div>
+<div class="calibre12"><span>For a class that implements <span class="bold1">Serializable</span>, the <span class="bold1">@serialField</span> tag provides comments for an <span class="bold1">ObjectStreamField</span> component. It has the following syntax:</span></div>
+<div class="calibre27"><span>@serialField <span class="italic">name type description</span></span></div>
+<div class="calibre27"><span>Here, <span class="italic">name</span> is the name of the field, <span class="italic">type</span> is its type, and <span class="italic">description</span> is the comment for that field.</span></div>
+<div id="filepos1622170" class="calibre1"><span class="calibre10"><span><span class="bold1">@since</span></span></span></div>
+<div class="calibre12"><span>The <span class="bold1">@since</span> tag states that an element was introduced in a specific release. It has the following syntax:</span></div>
+<div class="calibre27"><span>@since <span class="italic">release</span></span></div>
+<div class="calibre27"><span>Here, <span class="italic">release</span> is a string that designates the release or version in which this feature became available.</span></div>
+<div id="filepos1622710" class="calibre1"><span class="calibre10"><span><span class="bold1">@throws</span></span></span></div>
+<div class="calibre12"><span>The <span class="bold1">@throws</span> tag has the same meaning as the <span class="bold1">@exception</span> tag.</span></div>
+<div id="filepos1622957" class="calibre1"><span class="calibre10"><span><span class="bold1">{@value}</span></span></span></div>
+<div class="calibre12"><span><span class="bold1">{@value}</span> has two forms. The first displays the value of the constant that it precedes, which must be a <span class="bold1">static</span> field. It has this form:</span></div>
+<div class="calibre27"><span>{@value}</span></div>
+<div class="calibre27"><span>The second form displays the value of a specified <span class="bold1">static</span> field. It has this form:</span></div>
+<div class="calibre27"><span>{@value <span class="italic">pkg.class</span>#<span class="italic">field</span>}</span></div>
+<div class="calibre27"><span>Here, <span class="italic">pkg.class</span>#<span class="italic">field</span> specifies the name of the <span class="bold1">static</span> field.</span></div>
+<div id="filepos1623744" class="calibre1"><span class="calibre10"><span><span class="bold1">@version</span></span></span></div>
+<div class="calibre12"><span>The <span class="bold1">@version</span> tag specifies the version of a class or interface. It has the following syntax:</span></div>
+<div class="calibre27"><span>@version <span class="italic">info</span></span></div>
+<div class="calibre27"><span>Here, <span class="italic">info</span> is a string that contains version information, typically a version number, such as 2.2. You will need to specify the <span class="bold1">-version</span> option when executing <span class="bold1">javadoc</span> in order for the <span class="bold1">@version</span> field to be included in the HTML documentation.</span></div>
+<div id="filepos1624430" class="calibre1"><span class="calibre10"><span><span class="bold1">The General Form of a Documentation Comment</span></span></span></div>
+<div class="calibre12"><span>After the beginning <span class="bold1">/**</span>, the first line or lines become the main description of your class, interface, field, constructor, or method. After that, you can include one or more of the various <span class="bold1">@</span> tags. Each <span class="bold1">@</span> tag must start at the beginning of a new line or follow one or more asterisks (<span class="bold1">*</span>) that are at the start of a line. Multiple tags of the same type should be grouped together. For example, if you have three <span class="bold1">@see</span> tags, put them one after the other. In-line tags (those that begin with a brace) can be used within any description.</span></div>
+<div class="calibre23"><span>Here is an example of a documentation comment for a class:</span></div>
+<div class="calibre1"><span><img alt="image" src="images/01200.jpg" class="calibre1072"/></span></div><div class="calibre11"> </div>
+<div id="filepos1625471" class="calibre1"><span class="calibre10"><span><span class="bold1">What javadoc Outputs</span></span></span></div>
+<div class="calibre12"><span>The <span class="bold1">javadoc</span> program takes as input your Java program’s source file and outputs several HTML files that contain the program’s documentation. Information about each class will be in its own HTML file. <span class="bold1">javadoc</span> will also output an index and a hierarchy tree. Other HTML files can be generated.</span></div>
+<div id="filepos1625974" class="calibre1"><span class="calibre10"><span><span class="bold1">An Example That Uses Documentation Comments</span></span></span></div>
+<div class="calibre12"><span>Following is a sample program that uses documentation comments. Notice the way each comment immediately precedes the item that it describes. After being processed by <span class="bold1">javadoc</span>, the documentation about the <span class="bold1">SquareNum</span> class will be found in <span class="bold1">SquareNum.html</span>.</span></div>
+<div class="calibre1"><span><img alt="image" src="images/01201.jpg" class="calibre1073"/></span></div><div class="calibre11"> </div>
+<div class="calibre1"><span><img alt="image" src="images/01202.jpg" class="calibre1074"/></span></div><div class="calibre11"> </div>  <div class="mbppagebreak" id="calibre_pb_26"></div>
+</body></html>
